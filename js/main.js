@@ -109,7 +109,8 @@ $(function () {
         var windowHeight = $(window).height();
         imgs.each(function () {
             var rect = this.getBoundingClientRect();
-            if ((rect.y || rect.top) <= windowHeight) {
+            var y = rect.y || rect.top;
+            if (y > 0 && y <= windowHeight) {
                 $(this).addClass('active');
             }
         });
