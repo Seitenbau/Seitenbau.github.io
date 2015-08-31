@@ -131,7 +131,8 @@ section section {
 section section h2 {
     margin-top: 1em;
 }
-section section img {
+section section img,
+section section .img {
     width: 75px;
     height: 75px;
     position: absolute;
@@ -148,14 +149,14 @@ section section img {
     border-bottom-color: white;
 }
 #skills {
-    background: transparent url("../img/mountains-blue.svg") bottom center no-repeat;
+    background: transparent url("../img/mountains-blue.svg") center bottom no-repeat;
 }
 #languages {
     color: white;
-    background: #192a48 url("../img/mountains-white.svg") bottom center no-repeat;
+    background: #192a48 url("../img/mountains-white.svg") center bottom no-repeat;
 }
 #tools {
-    background: transparent url("../img/mountains-cyan.svg") bottom center no-repeat;
+    background: transparent url("../img/mountains-cyan.svg") center bottom no-repeat;
 }
 #soft {
     color: white;
@@ -169,19 +170,52 @@ section section img {
     transform: rotate(15deg);
     transition: bottom 1.5s ease-in-out, right 1.5s ease-out, transform 1.5s linear;
 }
-#skills img.active {
+#skills.active img {
     bottom: 4em;
     right: 3em;
     transform: rotate(0deg);
+}
+#languages .img {
+    overflow: hidden;
+    height: 40px;
+    margin-bottom: 25px;
+    width: 65px;
+    margin-right: 5px;
+}
+#languages .img img {
+    top: 100%;
+    left: -40px;
+    width: 150px;
+    right: auto;
+    bottom: auto;
+    height: auto;
+    transition: top 3s linear;
+}
+#languages.active .img img {
+    top: -250%;
 }
 #tools img {
     transform: rotate(0deg);
     transition: transform 4s ease-in-out;
 }
-#tools img.active {
+#tools.active img {
     transform: rotate(360deg);
 }
+#soft .img img {
+    bottom: 0;
+    right: 0;
+}
+#soft .img img:last-of-type {
+    opacity: 0;
+    transition: opacity 3s ease-in-out;
+}
+#soft .img.active img:last-of-type {
+    opacity: 1;
+}
 
+#showcase h3 {
+    line-height: 2.25em;
+}
 #showcase ul,
 #showcase li {
     margin: 0;
@@ -234,7 +268,7 @@ section section img {
 #showcase li a {
     color: black;
 }
-#showcase li:hover {
+#showcase li:hover a {
     border-color: #004883;
 }
 #showcase li:hover span {
@@ -285,7 +319,7 @@ footer:before {
     content: "";
     display: block;
     max-width: 1020px;
-    background: transparent url("../img/mountains-gray.svg") top center no-repeat;
+    background: transparent url("../img/mountains-gray.svg") center -1px no-repeat;
     background-size: 50% 40px;
     height: 40px;
     margin: 0 auto 10px;
@@ -405,12 +439,7 @@ footer small {
         margin-bottom: 1.25em;
     }
     section section img {
-        opacity: .2;
-        width: 50px;
-        height: 50px;
-        bottom: 3em !important;
-        right: 3em !important;
-        transition: none !important;
+        display: none;
     }
     #showcase img {
         width: 200px;

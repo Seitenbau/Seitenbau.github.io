@@ -111,7 +111,7 @@ $(function () {
             var rect = this.getBoundingClientRect();
             var y = rect.y || rect.top;
             if (y > 0 && y <= windowHeight) {
-                $(this).addClass('active');
+                $(this).parent().addClass('active');
             }
         });
     });
