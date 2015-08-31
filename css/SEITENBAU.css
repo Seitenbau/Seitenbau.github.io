@@ -25,7 +25,7 @@ header section {
     overflow: hidden;
 }
 main, header h1, header section * {
-    max-width: 1020px;
+    max-width: 1280px;
     margin-left: auto;
     margin-right: auto;
     transition: margin .1s ease-out;
@@ -121,7 +121,7 @@ section.box.nested section {
 }
 #claim p {
     font-size: 175%;
-    margin: 0 4em 0 0;
+    margin: 0 12em 0 0;
 }
 section section {
     position: relative;
@@ -182,6 +182,65 @@ section section img {
     transform: rotate(360deg);
 }
 
+#showcase ul,
+#showcase li {
+    margin: 0;
+    padding: 0;
+}
+
+#showcase li {
+    list-style: none;
+    float: none;
+    width: auto;
+}
+#showcase li:before {
+    content: none;
+    display: none;
+}
+#showcase li a {
+    border: 1px solid #cdcdcd;
+    position: relative;
+    width: 30%;
+    height: 255px;
+    display: block;
+    float: left;
+    text-indent: 0;
+    margin-right: 5%;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+}
+#showcase li:nth-child(3n) a {
+    margin-right: 0;
+}
+
+#showcase li img {
+    position: absolute;
+    top: 0;
+    bottom: 55px;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+#showcase li span {
+    background: #cdcdcd;
+    display: block;
+    line-height: 55px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    padding-left: 1em;
+}
+#showcase li a {
+    color: black;
+}
+#showcase li:hover {
+    border-color: #004883;
+}
+#showcase li:hover span {
+    background-color: #004883;
+    color: white;
+}
 
 .city {
     overflow: hidden;
@@ -272,13 +331,16 @@ footer small {
     margin-top: 1em;
 }
 
-@media screen and (max-width: 1080px) {
+@media screen and (max-width: 1340px) {
     body {
         font-size: 18px;
     }
     header h1, header section *, main {
         margin-left: 30px;
         margin-right: 30px;
+    }
+    #claim p {
+        margin-right: 8em;
     }
     section.box {
         box-shadow: 0 0 15px rgba(0, 0, 0, .2);
@@ -293,6 +355,18 @@ footer small {
     section.box {
         box-shadow: 0 0 10px rgba(0, 0, 0, .2);
         margin-bottom: 1.5em;
+    }
+    #claim p {
+        margin-right: 2em;
+    }
+    #showcase li a {
+        width: 47.5%;
+    }
+    #showcase li:nth-child(3n) a {
+        margin-right: 5%;
+    }
+    #showcase li:nth-child(2n) a {
+        margin-right: 0;
     }
     .map {
         float: none;
@@ -311,7 +385,7 @@ footer small {
 }
 @media screen and (max-width: 800px) {
     body {
-        font-size: 20px;
+        font-size: 16px;
     }
     header h1, header section *, main {
         margin-left: 20px;
@@ -338,15 +412,24 @@ footer small {
         right: 3em !important;
         transition: none !important;
     }
+    #showcase img {
+        width: 200px;
+    }
+    #showcase li a {
+        height: 200px;
+    }
     #claim p {
         font-size: 150%;
-        margin: 0;
+        margin-right: 3em;
     }
     footer:before {
         background-size: 75% 40px;
     }
 }
 @media screen and (max-width: 600px) {
+    body {
+        font-size: 14px;
+    }
     header h1, header section *, main {
         margin-left: 15px;
         margin-right: 15px;
@@ -364,6 +447,13 @@ footer small {
     }
     #claim p {
         font-size: 125%;
+    }
+    #showcase li a {
+        width: 100%;
+        margin-right: 0;
+    }
+    #showcase li img {
+        width: 150px;
     }
     footer:before {
         height: 30px;
