@@ -1,6 +1,6 @@
 html {
     background: #f5f4f2;
-    color: #345;
+    color: #303639;
 }
 body {
     font-family: "Roboto", sans-serif;
@@ -14,9 +14,20 @@ header h1 {
     background: white url("../img/seitenbau-logo.png") left center no-repeat;
     height: 3em;
     margin: 0;
-    text-indent: 100%;
-    white-space: nowrap;
+    position: relative;
+}
+header h1 a {
     overflow: hidden;
+    text-indent: 1000%;
+    display: block;
+    position: absolute;
+    width: 165px;
+    height: 19px;
+    margin: auto;
+    top: 0;
+    bottom: 0;
+    left: -20px;
+    padding: 20px;
 }
 header section {
     background: #02132e url("../img/Seitenbau_abstrakt_3.jpg") center center no-repeat;
@@ -488,4 +499,10 @@ footer small {
         height: 30px;
         background-size: 75% 30px;
     }
+}
+
+.browserupgrade {
+    padding: 2em;
+    background: #ffffcc;
+    margin: 0;
 }
