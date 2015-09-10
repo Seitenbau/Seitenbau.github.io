@@ -28,6 +28,8 @@ header h1 a {
     bottom: 0;
     left: -20px;
     padding: 20px;
+    white-space: pre;
+    color: transparent;
 }
 header section {
     background: #02132e url("../img/Seitenbau_abstrakt_3.jpg") center center no-repeat;
@@ -323,7 +325,7 @@ aside:before {
 }
 
 footer {
-    background: #00609A;
+    background: #004883;
     color: white;
     text-align: center;
     padding-bottom: 2em;
