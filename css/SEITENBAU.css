@@ -3,15 +3,23 @@ html {
     color: #303639;
 }
 body {
-    font-family: "Roboto", sans-serif;
+		background: url("../img/bg_blau_gruen.gif") center top repeat-y;
+		padding: 0px 20px;
+    font-family: "Atlas Grotesk Detail", sans-serif;
     font-size: 20px;
     line-height: 1.25;
 }
 header {
     background: white;
+    font-family: "Brandon Grotesque", sans-serif;
+    font-weight: bold;
+    font-size: 15px;
+    text-transform: uppercase;
+    letter-spacing: 0.25rem;
+    line-height: 2.2em;
 }
 header h1 {
-    background: white url("../img/seitenbau-logo.png") left center no-repeat;
+    background: url("../img/seitenbau-logo.png") center center no-repeat;
     height: 3em;
     margin: 0;
     position: relative;
@@ -26,18 +34,28 @@ header h1 a {
     margin: auto;
     top: 0;
     bottom: 0;
-    left: -20px;
+    left: 450px;
     padding: 20px;
     white-space: pre;
     color: transparent;
 }
 header section {
-    background: #02132e url("../img/Seitenbau_abstrakt_3.jpg") center center no-repeat;
+    background: url("../img/opensource_stage.jpg") center center no-repeat;
+    height: 966px;
     background-size: cover;
-    color: white;
+    color: #000;
     overflow: hidden;
 }
-main, header h1, header section * {
+main {
+    background: white;
+    margin-left: auto;
+    margin-right: auto;
+    transition: margin .1s ease-out;
+}
+.inner_section{
+		padding: 3em 0 0 0;
+}
+.inner_section, header em, header h1, header section * {
     max-width: 1280px;
     margin-left: auto;
     margin-right: auto;
@@ -45,23 +63,22 @@ main, header h1, header section * {
 }
 header h2 {
     border-bottom: 0 none;
-    font-size: 110%;
-    margin-top: 2em;
-    margin-bottom: 0;
+    font-size: 300%;
+    background: none;
+    text-align: center;
 }
-header h2:after {
-    content: '';
-    display: block;
-    border-bottom: 2px solid white;
-    margin-top: -.6em;
-    margin-left: 8em;
+header em {
+		color: #006cb6;
+		font-style: normal;
+		letter-spacing: 0.9375rem;
+		font-weight: bold;
+		text-align: center;
 }
 header blockquote {
     text-align: center;
     padding-top: 1em;
     font-size: 150%;
     padding-bottom: 1em;
-    border-bottom: 2px solid white;
     margin-bottom: 4em;
     margin-top: 0;
 }
@@ -69,45 +86,54 @@ header blockquote:before {
     content: '';
     display: block;
     margin: 0 auto .5em;
-    width: 100px;
-    height: 100px;
+    width: 60px;
+    height: 60px;
     border-radius: 100%;
-    background: #00609A url("../img/quotes.svg") center center no-repeat;
+    background: url("../img/quote.png") center center no-repeat;
     background-size: 60px auto;
 }
 
-section > ul {
+.inner_section > ul {
     list-style: none;
     padding: 0;
     margin: 0 0 6em;
     overflow: hidden;
 }
 
-section > ul li {
+.inner_section > ul li {
     padding-left: 1em;
     text-indent: -.7em;
     float: left;
     width: 30%;
     margin-right: 3%;
-    margin-bottom: 1.5em;
+    margin-bottom: 2em;
     box-sizing: border-box;
 }
 
-section > ul li:before {
-    content: "\002022";
+.inner_section > ul li:before {
+    /*content: "\002022";*/
+    content: "\2212";
     padding-right: .3em;
-    font-size: 200%;
+    /*font-size: 200%;*/
     line-height: .5;
     position: relative;
-    top: 0.15em;
+    /*top: 0.15em;*/
 }
 
 h2 {
-    font-weight: normal;
-    font-size: 175%;
-    border-bottom: 2px solid #cdcdcd;
-    padding: 0 0 .5em;
-    margin: 0 0 .7em;
+    background: url("../img/lines.png") 0px 0px no-repeat;
+    font-family: "Brandon Grotesque", sans-serif;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 0.25rem;
+    font-size: 110%;
+    line-height: 1.7em;
+    padding: 0 0 .5em .8em;
+    margin: 0 0 1.2em .3em;
+}
+
+h2.invert_h2 {
+		background: url("../img/lines_invert.png") 0px 0px no-repeat;
 }
 
 h3 {
@@ -117,9 +143,9 @@ h3 {
 }
 
 section.box {
-    padding: 2em;
+    /*padding: 2em;
     box-shadow: 0 0 20px rgba(0, 0, 0, .2);
-    margin-bottom: 2em;
+    margin-bottom: 2em;*/
     background: white;
     overflow: hidden;
 }
@@ -157,7 +183,7 @@ section section .img {
 }
 #skills li:before,
 #tools li:before {
-    color: #cdcdcd;
+    color: #000;
 }
 #languages h2,
 #soft h2 {
