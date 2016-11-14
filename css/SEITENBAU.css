@@ -143,7 +143,10 @@ h2.invert_h2 {
 }
 
 h3 {
-    font-weight: bold;
+    font-family: "Brandon Grotesque", sans-serif;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 0.25rem;
     font-size: 100%;
     margin: 0 0 .7em;
 }
@@ -339,6 +342,8 @@ section section .img {
 address, aside {
     font-style: normal;
     white-space: pre-line;
+    font-size: 87%;
+    line-height: 1.7em;
     margin: 0;
 }
 aside:before {
@@ -360,17 +365,50 @@ aside:before {
     padding-bottom: 48px;
 }
 .popover {
-    font-family: "Roboto", sans-serif;
+    font-family: "Atlas Grotesk", sans-serif;
 }
 .ol-attribution ul {
     font-size: 11px;
 }
-
+.clearfix {
+    clear: both;
+    display: block;
+}
 footer {
     background: #19b4eb;
-    color: white;
-    text-align: center;
-    padding-bottom: 2em;
+    padding-bottom: 0.1em;
+}
+footer .inner_section{
+    margin-bottom: 1em;
+}
+footer h3 {
+		font-size: 75%;
+		font-weight:700;
+		letter-spacing: 0.08125rem;
+
+}
+footer .footerblock {
+		float: left;
+		width: 49.6667%;
+}
+footer address {
+		margin: -15px 0 30px 0;
+}
+footer address, footer small, footer p, footer ul {
+		font-size: 77%;
+		line-height: 1.5em;
+}
+footer a{
+    color: #222;
+    text-decoration: none;
+}
+footer a.link-footer {
+		margin: 0 0 2em 0;
+		display: block;
+}
+footer a:hover, footer a:focus {
+	color: white;
+	transition: color 0.3s ease 0s;
 }
 footer:before {
     content: "";
@@ -381,42 +419,54 @@ footer:before {
     height: 40px;
     margin: 0 auto 10px;
 }
-footer a {
+footer ul{
+		padding-left: 0;
+}
+footer ul li {
+		list-style-type: none;
+}
+footer ul.social {
+	margin: 0 0 1.7em 0;
+}
+footer ul.social li {
+		display: inline;
+}
+footer ul.social li a {
     display: inline-block;
-    background: white center center no-repeat;
+    background: black center center no-repeat;
     color: #00609A;
-    height: 50px;
-    width: 50px;
-    margin: 0 8px;
+    height: 25px;
+    width: 25px;
+    margin: 0 8px 0 0;
     border-radius: 25px;
     text-indent: -100em;
     overflow: hidden;
     transition: background-color .2s linear;
 }
-footer a:hover {
+footer ul.social li a:hover {
     background-color: rgba(255, 255, 255, .8);
 }
-footer a:focus {
+footer ul.social li a:focus {
     outline: none;
     background-color: rgba(255, 255, 255, .6);
 }
-footer a.fb {
+footer ul.social li a.fb {
     background-image: url("../img/facebook.svg");
-    background-size: auto 30px;
+    background-size: auto 15px;
 }
-footer a.xi {
+footer ul.social li a.xi {
     background-image: url("../img/xing.svg");
-    background-size: auto 35px;
+    background-size: auto 18px;
 }
-footer a.gh {
+footer ul.social li a.gh {
     background-image: url("../img/github.svg");
-    background-size: 42px auto;
+    background-size: 25px auto;
 }
-footer a.sb {
+footer ul.social li a.sb {
     background-image: url("../img/seitenbau-bildmarke.svg");
-    background-size: auto 28px;
+    background-size: auto 12px;
 }
-footer small {
+footer ul.social li small {
     display: block;
     font-size: 60%;
     margin-top: 1em;
