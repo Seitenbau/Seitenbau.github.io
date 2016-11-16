@@ -114,6 +114,7 @@ header blockquote:before {
     margin-bottom: 1.7em;
     box-sizing: border-box;
     font-size: 110%;
+    height: 2em;
 }
 
 .inner_section > ul li:before {
@@ -157,12 +158,6 @@ section.box {
     margin-bottom: 2em;*/
     background: white;
     overflow: hidden;
-}
-section.box.nested {
-    padding: 0;
-}
-section.box.nested section {
-    padding: 0 2em;
 }
 #claim {
     margin-top: -2em;
@@ -281,6 +276,7 @@ section section .img {
     list-style: none;
     float: none;
     width: auto;
+    height: 0;
 }
 #showcase li:before {
     content: none;
@@ -308,7 +304,7 @@ section section .img {
     left: 0;
     right: 0;
     margin: auto;
-    width: 17.46em;
+    width: 100%;
     height: 11.6em;
 }
 #showcase li span {
@@ -323,17 +319,18 @@ section section .img {
     font-family: "Brandon Grotesque", sans-serif;
     font-weight: bold;
     text-transform: uppercase;
-    font-size: 70%;
+    font-size: 65%;
 }
 #showcase li a {
-    color: black;
+    color: #002d47;
 }
 #showcase li:hover a {
-    border-color: #00609A;
+    border-color: #002d47;
 }
 #showcase li:hover span {
-    background-color: #00609A;
-    color: white;
+    background-color: #002d47;
+    color: #00ff00;
+    transition: color 0.3s ease 0s;
 }
 
 .city {
@@ -476,35 +473,56 @@ footer ul.social li small {
     body {
         font-size: 18px;
     }
-    header h1, header section *, main {
-        margin-left: 30px;
-        margin-right: 30px;
+    header section {
+    		padding: 0 2em;
     }
-    #claim p {
-        margin-right: 8em;
+    header h2 {
+    		font-size: 300%;
+    		padding: 0;
     }
-    section.box {
-        box-shadow: 0 0 15px rgba(0, 0, 0, .2);
-        margin-bottom: 1.75em;
+    header blockquote {
+    		font-size: 120%;
     }
-    section > ul li {
-        width: 40%;
-        margin-right: 7%;
+    header blockquote:before {
+    		background: rgba(0, 0, 0, 0) url("../img/quote.png") no-repeat scroll center center / 50px auto;
+  	}
+    .inner_section {
+    		padding: 0 2em;
     }
+    #skills {
+    margin-top: -20px;
+		}
+		#showcase li a {
+    height: 311px;
+		}
+
 }
 @media screen and (max-width: 1000px) {
-    section.box {
-        box-shadow: 0 0 10px rgba(0, 0, 0, .2);
-        margin-bottom: 1.5em;
+		header section {
+				height: 730px;
+		}
+		header h1 a {
+				left: 272px;
+		}
+		header h2 {
+    		font-size: 200%;
     }
-    #claim p {
-        margin-right: 2em;
+    header em {
+    		font-size: 80%;
+    }
+    header blockquote {
+    		font-size: 95%;
+    		line-height: 1.8em;
+    }
+
+    #showcase li span {
+    		min-height: 50px;
     }
     #showcase li a {
         width: 47.5%;
     }
     #showcase li:nth-child(3n) a {
-        margin-right: 5%;
+        margin-right: 2%;
     }
     #showcase li:nth-child(2n) a {
         margin-right: 0;
@@ -513,7 +531,7 @@ footer ul.social li small {
         float: none;
         width: 100%;
     }
-    address {
+    section address {
         float: left;
         margin-bottom: 2em;
     }
@@ -528,9 +546,25 @@ footer ul.social li small {
     body {
         font-size: 16px;
     }
-    header h1, header section *, main {
-        margin-left: 20px;
-        margin-right: 20px;
+    h2, h2.invert_h2 {
+    		background: none;
+    		padding-left: 0;
+    }
+    header h1 {
+    		margin-bottom: 1em;
+    }
+    header h1 a {
+				left: 138px;
+		}
+    header h2 {
+    		margin-bottom: 1em;
+    		font-size: 170%;
+    }
+    header em {
+    		font-size: 70%;
+    		letter-spacing: 0.7rem;
+    		line-height: 2em;
+    		margin-bottom: 1em;
     }
     section > ul {
         margin-bottom: 3em;
@@ -541,34 +575,22 @@ footer ul.social li small {
         float: none;
         margin-bottom: .7em;
     }
-    section.box {
-        box-shadow: 0 0 5px rgba(0, 0, 0, .2);
-        margin-bottom: 1.25em;
-    }
-    section section img {
-        display: none;
-    }
-    #showcase img {
-        width: 200px;
-    }
-    #showcase li a {
-        height: 200px;
-    }
-    #claim p {
-        font-size: 150%;
-        margin-right: 3em;
-    }
-    footer:before {
-        background-size: 75% 40px;
-    }
+		.inner_section {
+				margin-bottom: 3em;
+		}
+		#showcase li a {
+    height: 281px;
+		}
+		.img_addon {
+			display: none;
+		}
+
 }
 @media screen and (max-width: 600px) {
     body {
         font-size: 14px;
-    }
-    header h1, header section *, main {
-        margin-left: 15px;
-        margin-right: 15px;
+        background: none;
+        padding: 0;
     }
     header h1 {
         background-size: 165px 19px;
@@ -576,7 +598,21 @@ footer ul.social li small {
     header h1 a {
         width: 165px;
         height: 19px;
+        left: 100px;
     }
+    header h2 {
+    	  font-size: 140%;
+    }
+    header em {
+    		line-height: 2em;
+    		margin-bottom: 1em;
+    }
+    header blockquote {
+    		font-size: 70%;
+    }
+    header blockquote:before {
+    		background: rgba(0, 0, 0, 0) url("../img/quote.png") no-repeat scroll center center / 40px auto;
+  	}
     address, aside {
         float: none;
     }
@@ -592,12 +628,17 @@ footer ul.social li small {
         font-size: 125%;
     }
     #showcase li a {
-        width: 100%;
-        margin-right: 0;
+        width: 271px;
+        margin-left: auto;
+    		margin-right: auto;
+        height: 224px;
     }
-    #showcase li img {
-        width: 150px;
+    #showcase li span {
+        line-height: 18px;
+        min-height: 36px;
+        margin-bottom: 10px;
     }
+
     footer:before {
         height: 30px;
         background-size: 75% 30px;
