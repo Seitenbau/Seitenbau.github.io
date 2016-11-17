@@ -266,7 +266,9 @@ section section .img {
 #showcase h3 {
     line-height: 2.25em;
 }
-#showcase ul,
+#showcase ul{
+    margin: 0 auto;
+}
 #showcase li {
     margin: 0;
     padding: 0;
@@ -473,6 +475,9 @@ footer ul.social li small {
     body {
         font-size: 18px;
     }
+    .inner_section, header em, header h1, header section * {
+		    max-width: 1063px;
+		}
     header section {
     		padding: 0 2em;
     }
@@ -490,16 +495,36 @@ footer ul.social li small {
     		padding: 0 2em;
     }
     #skills {
-    margin-top: -20px;
+   			margin-top: -20px;
 		}
 		#showcase li a {
-    height: 311px;
+    		height: 311px;
 		}
 
 }
+@media screen and (max-width: 1185px) {
+    .inner_section, header em, header h1, header section * {
+		    max-width: 910px;
+		}
+		#showcase li a {
+    		width: 40%;
+		}
+		 #showcase li:nth-child(3n) a {
+        margin-right: 2%;
+    }
+    #showcase li:nth-child(2n) a {
+        margin-right: 0;
+    }
+}
 @media screen and (max-width: 1000px) {
+		.inner_section, header em, header h1, header section * {
+		    max-width: 700px;
+		}
 		header section {
 				height: 730px;
+		}
+		header h1 {
+				margin-bottom: 2em;
 		}
 		header h1 a {
 				left: 272px;
@@ -519,13 +544,7 @@ footer ul.social li small {
     		min-height: 50px;
     }
     #showcase li a {
-        width: 47.5%;
-    }
-    #showcase li:nth-child(3n) a {
-        margin-right: 2%;
-    }
-    #showcase li:nth-child(2n) a {
-        margin-right: 0;
+        width: 48.5%;
     }
     .map {
         float: none;
@@ -546,6 +565,9 @@ footer ul.social li small {
     body {
         font-size: 16px;
     }
+    .inner_section {
+		    max-width: 420px;
+		}
     h2, h2.invert_h2 {
     		background: none;
     		padding-left: 0;
@@ -579,8 +601,14 @@ footer ul.social li small {
 				margin-bottom: 3em;
 		}
 		#showcase li a {
-    height: 281px;
-		}
+        width: 400px;
+        margin-left: auto;
+    		margin-right: auto;
+        height: 334px;
+    }
+    #showcase li img {
+        height: 14.6em;
+    }
 		.img_addon {
 			display: none;
 		}
@@ -592,6 +620,9 @@ footer ul.social li small {
         background: none;
         padding: 0;
     }
+    .inner_section {
+		    max-width: 335px;
+		}
     header h1 {
         background-size: 165px 19px;
     }
@@ -619,7 +650,6 @@ footer ul.social li small {
     aside {
         margin-bottom: 2em;
         padding-bottom: 1em;
-        border-bottom: 1px solid #cdcdcd;
     }
     .city:last-of-type address {
         margin: 0;
@@ -628,10 +658,10 @@ footer ul.social li small {
         font-size: 125%;
     }
     #showcase li a {
-        width: 271px;
+        width: 324px;
         margin-left: auto;
     		margin-right: auto;
-        height: 224px;
+        height: 290px;
     }
     #showcase li span {
         line-height: 18px;
