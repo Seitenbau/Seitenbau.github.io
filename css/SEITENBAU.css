@@ -532,6 +532,7 @@ footer ul.social li small {
     }
     header em {
     		font-size: 80%;
+    		letter-spacing: 0.8rem;
     }
     header blockquote {
     		font-size: 95%;
@@ -582,7 +583,7 @@ footer ul.social li small {
     }
     header em {
     		font-size: 70%;
-    		letter-spacing: 0.7rem;
+    		letter-spacing: 0.6rem;
     		line-height: 2em;
     		margin-bottom: 1em;
     }
@@ -643,6 +644,7 @@ footer ul.social li small {
     header em {
     		line-height: 2em;
     		margin-bottom: 1em;
+    		letter-spacing: 0.4rem;
     }
     header blockquote {
     		font-size: 70%;
