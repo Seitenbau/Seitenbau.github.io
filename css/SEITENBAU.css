@@ -621,6 +621,11 @@ footer ul.social li small {
     .inner_section {
 		    max-width: 335px;
 		}
+		.inner_section > ul li {
+				box-sizing: content-box;
+				height: auto;
+				margin-right: 7%;
+		}
     header h1 {
         background-size: 165px 19px;
     }
