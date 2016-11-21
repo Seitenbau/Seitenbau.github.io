@@ -626,6 +626,9 @@ footer ul.social li small {
 				height: auto;
 				margin-right: 7%;
 		}
+		header {
+				letter-spacing: 0.15rem;
+		}
     header h1 {
         background-size: 165px 19px;
     }
