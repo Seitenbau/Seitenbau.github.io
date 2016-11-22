@@ -1,45 +1,45 @@
 // Atlas Grotesk from commercialtype.com
 @font-face {
   font-family: 'Atlas Grotesk';
-  src: url("../fonts/AtlasGrotesk-Thin-Web.woff2") format('woff2'),
-  		 url("../fonts/AtlasGrotesk-Thin-Web.woff") format('woff');
+  src: url('../fonts/AtlasGrotesk-Thin-Web.woff2') format('woff2'),
+  		 url('../fonts/AtlasGrotesk-Thin-Web.woff') format('woff');
   font-weight: 100;
 }
 
 @font-face {
   font-family: 'Atlas Grotesk';
-  src: url("../fonts/AtlasGrotesk-ThinItalic-Web.woff2") format('woff2'),
-    	 url("../fonts/AtlasGrotesk-ThinItalic-Web.woff") format('woff');
+  src: url('../fonts/AtlasGrotesk-ThinItalic-Web.woff2') format('woff2'),
+    	 url('../fonts/AtlasGrotesk-ThinItalic-Web.woff') format('woff');
   font-weight: 100;
   font-style: italic;
 }
 
 @font-face {
   font-family: 'Atlas Grotesk';
-  src: url("../fonts/AtlasGrotesk-Light-Web.woff2") format('woff2'),
-       url("../fonts/AtlasGrotesk-Light-Web.woff") format('woff');
+  src: url('../fonts/AtlasGrotesk-Light-Web.woff2') format('woff2'),
+       url('../fonts/AtlasGrotesk-Light-Web.woff') format('woff');
   font-weight: 200;
 }
 
 @font-face {
   font-family: 'Atlas Grotesk';
-  src: url("../fonts/AtlasGrotesk-LightItalic-Web.woff2") format('woff2'),
-       url("../fonts/AtlasGrotesk-LightItalic-Web.woff") format('woff');
+  src: url('../fonts/AtlasGrotesk-LightItalic-Web.woff2') format('woff2'),
+       url('../fonts/AtlasGrotesk-LightItalic-Web.woff') format('woff');
   font-weight: 200;
   font-style: italic;
 }
 
 @font-face {
   font-family: 'Atlas Grotesk';
-  src: url("../fonts/AtlasGrotesk-Regular-Web.woff2") format('woff2'),
-  		 url("../fonts/AtlasGrotesk-Regular-Web.woff") format('woff');
+  src: url('../fonts/AtlasGrotesk-Regular-Web.woff2') format('woff2'),
+  		 url('../fonts/AtlasGrotesk-Regular-Web.woff') format('woff');
   font-weight: 400;
 }
 
 @font-face {
   font-family: 'Atlas Grotesk';
-  src: url("../fonts/AtlasGrotesk-RegularItalic-Web.woff2") format('woff2'),
-       url("../fonts/AtlasGrotesk-RegularItalic-Web.woff") format('woff');
+  src: url('../fonts/AtlasGrotesk-RegularItalic-Web.woff2') format('woff2'),
+       url('../fonts/AtlasGrotesk-RegularItalic-Web.woff') format('woff');
   font-weight: 400;
   font-style: italic;
 }
@@ -47,15 +47,15 @@
 
 @font-face {
   font-family: 'Atlas Grotesk';
-  src: url("../fonts/AtlasGrotesk-Medium-Web.woff2") format('woff2'),
-       url("../fonts/AtlasGrotesk-Medium-Web.woff") format('woff');
+  src: url('../fonts/AtlasGrotesk-Medium-Web.woff2') format('woff2'),
+       url('../fonts/AtlasGrotesk-Medium-Web.woff') format('woff');
   font-weight: 500;
 }
 
 @font-face {
   font-family: 'Atlas Grotesk';
-  src: url("../fonts/AtlasGrotesk-MediumItalic-Web.woff2") format('woff2'),
-       url("../fonts/AtlasGrotesk-MediumItalic-Web.woff") format('woff');
+  src: url('../fonts/AtlasGrotesk-MediumItalic-Web.woff2') format('woff2'),
+       url('../fonts/AtlasGrotesk-MediumItalic-Web.woff') format('woff');
   font-weight: 500;
   font-style: italic;
 }
@@ -67,31 +67,31 @@
 // Brandon Grotesque W01 Regular
 @font-face {
   font-family: 'Brandon Grotesque';
-  src: url("../fonts/1e5fc8fa-a98c-4613-a08e-c6c975759a80.woff2") format('woff2'),
-       url("../fonts/6b45f9ca-22b4-48ca-962f-6ff1fa7fc196.woff") format('woff');
+  src: url('../fonts/1e5fc8fa-a98c-4613-a08e-c6c975759a80.woff2') format('woff2'),
+       url('../fonts/6b45f9ca-22b4-48ca-962f-6ff1fa7fc196.woff') format('woff');
   font-weight: 400;
 }
 
 // Brandon Grotesque W01 Medium
 @font-face {
   font-family: 'Brandon Grotesque';
-  src: url("../fonts/50ca6f6f-b64d-4af0-9b30-526cf363d87e.woff2") format('woff2'),
-       url("../fonts/050c2cbf-b818-4b8e-b6d2-71b70478bd9d.woff") format('woff');
+  src: url('../fonts/50ca6f6f-b64d-4af0-9b30-526cf363d87e.woff2') format('woff2'),
+       url('../fonts/050c2cbf-b818-4b8e-b6d2-71b70478bd9d.woff') format('woff');
   font-weight: 500;
 }
 
 // Brandon Grotesque W01 Bold
 @font-face {
   font-family: 'Brandon Grotesque';
-  src: url("../fonts/df1cd944-a6a3-4d30-8fd3-391c2e9531f1.woff2") format('woff2'),
-       url("../fonts/4f2d0548-c7dc-459b-a2e0-e86656a10ded.woff") format('woff');
+  src: url('../fonts/df1cd944-a6a3-4d30-8fd3-391c2e9531f1.woff2') format('woff2'),
+       url('../fonts/4f2d0548-c7dc-459b-a2e0-e86656a10ded.woff') format('woff');
   font-weight: 700;
 }
 
 // Brandon Grotesque W01 Black
 @font-face {
   font-family: 'Brandon Grotesque';
-  src: url("../fonts/5eb8ec44-bd3d-4f8e-a022-4435afe8c772.woff2") format('woff2'),
-       url("../fonts/f74a4823-b1ad-4887-9f8e-b02719f2972b.woff") format('woff');
+  src: url('/fonts/5eb8ec44-bd3d-4f8e-a022-4435afe8c772.woff2') format('woff2'),
+       url('/fonts/f74a4823-b1ad-4887-9f8e-b02719f2972b.woff') format('woff');
   font-weight: 800;
 }
