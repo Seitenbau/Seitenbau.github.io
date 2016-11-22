@@ -6,13 +6,13 @@ html {
 body {
 		background: url("../img/bg_blau_gruen.gif") center top repeat-y;
 		padding: 0px 20px;
-    font-family: "Atlas Grotesk", sans-serif;
+    font-family: "Atlas Grotesk", Arial, Helvetica, sans-serif;
     font-size: 20px;
     line-height: 1.25;
 }
 header {
     background: white;
-    font-family: "Brandon Grotesque", sans-serif;
+    font-family: "Brandon Grotesque", Arial, Helvetica, sans-serif;
     font-weight: bold;
     font-size: 15px;
     text-transform: uppercase;
@@ -128,7 +128,7 @@ header blockquote:before {
 
 h2 {
     background: url("../img/lines.png") 0px 0px no-repeat;
-    font-family: "Brandon Grotesque", sans-serif;
+    font-family: "Brandon Grotesque", Arial, Helvetica, sans-serif;
     font-weight: 800;
     text-transform: uppercase;
     letter-spacing: 0.25rem;
@@ -143,7 +143,7 @@ h2.invert_h2 {
 }
 
 h3 {
-    font-family: "Brandon Grotesque", sans-serif;
+    font-family: "Brandon Grotesque", Arial, Helvetica, sans-serif;
     font-weight: 800;
     text-transform: uppercase;
     letter-spacing: 0.25rem;
@@ -317,7 +317,7 @@ section section .img {
     right: 0;
     left: 0;
     padding: 0.7em 1em;
-    font-family: "Brandon Grotesque", sans-serif;
+    font-family: "Brandon Grotesque", Arial, Helvetica, sans-serif;
     font-weight: bold;
     text-transform: uppercase;
     font-size: 65%;
@@ -363,7 +363,7 @@ aside:before {
     padding-bottom: 48px;
 }
 .popover {
-    font-family: "Atlas Grotesk", sans-serif;
+    font-family: "Atlas Grotesk", Arial, Helvetica, sans-serif;
 }
 .ol-attribution ul {
     font-size: 11px;
