@@ -15,8 +15,10 @@
         <link rel="stylesheet" href="css/openlayers.css">
         <link rel="stylesheet" href="css/bootstrap.min.css">
 				<link rel="stylesheet" href="css/fonts.css">
-        <link rel="stylesheet" href="css/SEITENBAU.css">        
+        <link rel="stylesheet" href="css/SEITENBAU.css">  
+        <script src="js/vendor/jquery-1.11.3.min.js"></script>      
         <script src="js/vendor/modernizr-2.8.3.min.js"></script>
+        <script src="js/github_api.js"></script>
         <!--[if IE 8]>
             <script src="js/vendor/html5shiv.min.js"></script>
         <![endif]-->
@@ -37,11 +39,18 @@
            </section>
         </header>
         <main>
-
             <section class="box">
+            	<section id="projects">
+        				<div class="inner_section">
+        					<h2>01 We GitHub</h2>
+        					<ul id="github_projects">
+        						<!-- siehe github_api.js -->
+        					</ul>
+        				</div>
+            	</section>
                 <section id="skills">
                 	<div class="inner_section">
-                    <h2>01 We do</h2>
+                    <h2>02 We do</h2>
                     <ul>
                         <li>Software for the Web
                         <li>Modern Web Design
@@ -60,7 +69,7 @@
                 </section>
                 <section id="languages">
                 	<div class="inner_section">
-                    <h2 class="invert_h2">02 We code in</h2>
+                    <h2 class="invert_h2">03 We code in</h2>
                     <ul>
                         <li>Java
                         <li>JavaScript
@@ -82,7 +91,7 @@
                 </section>
                 <section id="tools">
                 	<div class="inner_section">
-                    <h2>03 we use</h2>
+                    <h2>04 we use</h2>
                     <ul>
                         <li>Jenkins
                         <li>Maven
@@ -104,7 +113,7 @@
                 </section>
                 <section id="soft">
                 	<div class="inner_section">
-                    <h2 class="invert_h2">04 We believe in</h2>
+                    <h2 class="invert_h2">05 We believe in</h2>
                     <ul>
                         <li>High Quality
                         <li>Team Spirit
@@ -123,7 +132,7 @@
                 </section>
                <section class="box" id="showcase">
             	<div class="inner_section">
-                <h2>05 We made</h2>
+                <h2>06 We made</h2>
                 <ul>
 										<li><a href="https://www.seitenbau.com/referenzen/govdata-das-open-data-portal-des-bundes/"><img src="img/govdata.png" alt="govdata referenz seitenbau"><span>GovData – Das Open Data-Portal für Deutschland</span></a>
                     <li><a href="https://www.seitenbau.com/referenzen/universitat-zu-koln/"><img src="img/unikoln.png" alt="uni-koeln.de"><span>Universität zu Köln: Responsive Frontend und UX-Design</span></a>
@@ -140,7 +149,7 @@
             </section>
             <section class="box" id="location">
             	<div class="inner_section">
-                <h2>06 We work in</h2>
+                <h2>07 We work in</h2>
                 <div class="city">
                     <div class="map" id="map-constance"><div class="popup"></div></div>
                     <div class="map-description">

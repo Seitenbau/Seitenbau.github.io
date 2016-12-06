@@ -184,6 +184,101 @@ section section .img {
     right: 3em;
     pointer-events: none;
 }
+
+/* GITHUB PROJEKTE */
+#projects {
+	background: #F7F7F7 url("../img/mountains-white.svg") center bottom no-repeat;
+}
+#projects .inner_section {
+	padding: 20px 0 0 0;
+}
+#projects ul{
+    margin: 0 auto;
+}
+
+#projects li:before {
+    content: none;
+    display: none;
+}
+
+#projects li {
+    list-style: none;
+    width: 23%;
+    height: 340px;
+    display: block;
+    float: left;
+    text-indent: 0;
+    margin-right: 2%;
+    margin-bottom: 25px;
+    box-sizing: border-box;
+    padding: 0;
+    background: #FFF;
+}
+#projects li a {
+    text-decoration: none;
+}
+#projects .inner {
+}
+#projects .info {
+		height: 15.6rem;
+		color: #222;
+		padding: 10px 15px;
+		font-family: "Atlas Grotesk", Arial, Helvetica, sans-serif;
+		font-weight: normal;
+    font-size: 87%;
+    line-height: 1.6rem;
+}
+#projects .stargazers {
+		background: url("../img/stargazer.png") no-repeat 0 0;
+		padding-left: 20px;
+		margin-right: 10px;
+}
+#projects .forks {
+		background: url("../img/fork.png") no-repeat 0 0;
+		padding-left: 20px;
+}
+#projects .counts {
+		float: left;
+		font-size: 80%;
+}
+#projects .language {
+		text-align: right;
+		display: block;
+		float: right;
+		font-size: 80%;
+}
+#projects .info .description{
+		margin-top: 50px;
+		display: block;
+		text-align: center;
+		padding: 0 20px;
+}
+#projects .button-standard {
+		background: #19b4eb;
+		color: #FFF;
+		display: block;
+		height: 2.5rem;
+		padding: 15px;
+		font-family: "Brandon Grotesque", Arial, Helvetica, sans-serif;
+		font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 0.25rem;
+    font-size: 65%;
+    text-align: center;
+}
+#projects .button-standard span {
+		vertical-align: text-bottom;
+		word-wrap: break-word;
+}
+#projects li:hover a {
+		border-color: #002d47;
+}
+#projects li:hover .button-standard {
+		background-color: #002d47;
+    color: #00ff00;
+    transition: color 0.3s ease 0s;
+}
+
 #skills li:before,
 #tools li:before {
     color: #000;
@@ -498,6 +593,13 @@ footer ul.social li small {
 		#showcase li a {
     		height: 311px;
 		}
+		#projects .info {
+    font-size: 80%;
+    line-height: 1.4rem;
+		}
+		#projects .counts, #projects .language {
+			font-size: 100%;
+		}
 
 }
 @media screen and (max-width: 1185px) {
@@ -513,6 +615,13 @@ footer ul.social li small {
     #showcase li:nth-child(2n) a {
         margin-right: 0;
     }
+    #projects .info .description{
+		margin-top: 40px;
+		padding: 0 5px;
+		}
+		#projects .counts, #projects .language {
+			font-size: 100%;
+		}
 }
 @media screen and (max-width: 1000px) {
 		.inner_section, header em, header h1, header section * {
@@ -559,6 +668,21 @@ footer ul.social li small {
     aside:before {
         display: none;
     }
+    #projects li {
+    width: 31.3%;
+    height: 320px;
+    margin-right: 2%;
+    margin-bottom: 25px;
+    }
+    #projects .button-standard {
+    	padding: 10px;
+    }
+		#projects .info {
+			height: 15rem;
+		}
+		#projects .counts, #projects .language {
+			font-size: 100%;
+		}
 }
 @media screen and (max-width: 800px) {
     body {
@@ -610,6 +734,22 @@ footer ul.social li small {
     }
 		.img_addon {
 			display: none;
+		}
+		#projects li {
+    width: 48%;
+    height: 293px;
+    margin-right: 2%;
+    margin-bottom: 25px;
+    }
+    #projects .button-standard {
+    	padding: 5px;
+    	letter-spacing: 0.2rem;
+    }
+		#projects .info {
+			height: 14rem;
+		}
+		#projects .counts, #projects .language {
+			font-size: 100%;
 		}
 
 }
@@ -681,6 +821,10 @@ footer ul.social li small {
         height: 30px;
         background-size: 75% 30px;
     }
+    #projects .info {
+    font-size: 80%;
+    line-height: 1.2rem;
+		}
 }
 
 .browserupgrade {
