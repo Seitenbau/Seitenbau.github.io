@@ -303,14 +303,18 @@ section section .img {
     background: #00afb0 url("../img/mountains-gray-up.svg") center bottom no-repeat;
 }
 
-
-#skills img {
-    right: 90%;
+#skills .img img {
+		bottom: 0;
+    right: 0;
+}
+#skills .img img {
+    position: absolute;
+    right: 2000%;
     bottom: 2em;
     transform: rotate(15deg);
     transition: bottom 1.5s ease-in-out, right 1.5s ease-out, transform 1.5s linear;
 }
-#skills.active img {
+#skills .img.active img {
     bottom: 4em;
     right: 3em;
     transform: rotate(0deg);
@@ -331,14 +335,18 @@ section section .img {
     height: auto;
     transition: top 3s linear;
 }
-#languages.active .img img {
+#languages .img.active img {
     top: -250%;
 }
-#tools img {
+#tools .img img {
+		bottom: 0;
+    right: 0;
+}
+#tools .img img {
     transform: rotate(0deg);
     transition: transform 4s ease-in-out;
 }
-#tools.active img {
+#tools .img.active img {
     transform: rotate(360deg);
 }
 #soft .img img {
