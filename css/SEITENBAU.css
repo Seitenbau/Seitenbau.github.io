@@ -267,14 +267,15 @@ section section .img {
     text-align: center;
 }
 #projects .button-standard span {
-		vertical-align: text-bottom;
-		word-wrap: break-word;
+	vertical-align: text-bottom;
+	word-wrap: break-word;
 }
 #projects li:hover a {
-		border-color: #002d47;
+	border-color: #002d47;
+    transition: color 0.3s ease 0s;
 }
 #projects li:hover .button-standard {
-		background-color: #002d47;
+	background-color: #002d47;
     color: #00ff00;
     transition: color 0.3s ease 0s;
 }
