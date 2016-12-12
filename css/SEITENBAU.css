@@ -270,11 +270,10 @@ section section .img {
 	vertical-align: text-bottom;
 	word-wrap: break-word;
 }
-#projects li:hover a {
+#projects a:hover {
 	border-color: #002d47;
-    transition: color 0.3s ease 0s;
 }
-#projects li:hover .button-standard {
+#projects a:hover .button-standard {
 	background-color: #002d47;
     color: #00ff00;
     transition: color 0.3s ease 0s;
@@ -360,6 +359,14 @@ section section .img {
 }
 #soft .img.active img:last-of-type {
     opacity: 1;
+}
+
+#showcase .img img{
+    transition: margin-bottom 2s cubic-bezier(0.7,0.1,0.8,0.2);
+    transform: rotate(314deg);
+}
+#showcase .img.active img{
+    margin-bottom: 900px;
 }
 
 #showcase {
