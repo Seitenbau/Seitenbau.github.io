@@ -635,9 +635,6 @@ footer ul.social li small {
 		margin-top: 40px;
 		padding: 0 5px;
 		}
-		#projects .counts, #projects .language {
-			font-size: 100%;
-		}
 }
 @media screen and (max-width: 1000px) {
 		.inner_section, header em, header h1, header section * {
@@ -696,9 +693,7 @@ footer ul.social li small {
 		#projects .info {
 			height: 15rem;
 		}
-		#projects .counts, #projects .language {
-			font-size: 100%;
-		}
+		
 }
 @media screen and (max-width: 800px) {
     body {
@@ -763,9 +758,6 @@ footer ul.social li small {
     }
 		#projects .info {
 			height: 14rem;
-		}
-		#projects .counts, #projects .language {
-			font-size: 100%;
 		}
 
 }
@@ -840,7 +832,10 @@ footer ul.social li small {
     #projects .info {
     font-size: 80%;
     line-height: 1.2rem;
-		}
+	}
+    #projects .forks, #projects .stargazers {
+        padding: 2px 0px 2px 20px;
+    }
 }
 
 .browserupgrade {
