@@ -289,7 +289,6 @@ section section .img {
 }
 #skills {
     background: transparent url("../img/mountains-blue.svg") center bottom no-repeat;
-    margin-top: -30px;
 }
 #languages {
     color: white;
@@ -361,9 +360,14 @@ section section .img {
     opacity: 1;
 }
 
+#showcase .img{
+    right: 10px;
+}
 #showcase .img img{
     transition: margin-bottom 2s cubic-bezier(0.7,0.1,0.8,0.2);
     transform: rotate(314deg);
+    bottom: 0;
+    right: 0;
 }
 #showcase .img.active img{
     margin-bottom: 900px;
@@ -601,21 +605,20 @@ footer ul.social li small {
     		background: rgba(0, 0, 0, 0) url("../img/quote.png") no-repeat scroll center center / 50px auto;
   	}
     .inner_section {
-    		padding: 0 2em;
+    		padding-right: 2em;
+            padding-left: 2em;
     }
-    #skills {
-   			margin-top: -20px;
-		}
-		#showcase li a {
-    		height: 311px;
-		}
-		#projects .info {
-    font-size: 80%;
-    line-height: 1.4rem;
-		}
-		#projects .counts, #projects .language {
-			font-size: 100%;
-		}
+
+	#showcase li a {
+		height: 311px;
+	}
+	#projects .info {
+        font-size: 80%;
+        line-height: 1.4rem;
+	}
+	#projects .counts, #projects .language {
+		font-size: 100%;
+	}
 
 }
 @media screen and (max-width: 1185px) {
@@ -695,6 +698,11 @@ footer ul.social li small {
 		}
 		
 }
+@media screen and (max-width: 900px) {
+    #showcase .img_addon {
+        display: none;
+    }
+}
 @media screen and (max-width: 800px) {
     body {
         font-size: 16px;
@@ -731,34 +739,37 @@ footer ul.social li small {
         float: none;
         margin-bottom: .7em;
     }
-		.inner_section {
-				margin-bottom: 3em;
-		}
-		#showcase li a {
+	.inner_section {
+		margin-bottom: 3em;
+	}
+    .inner_section > ul li{
+        margin-bottom: 3.5em;
+    }
+	#showcase li a {
         width: 400px;
         margin-left: auto;
-    		margin-right: auto;
+		margin-right: auto;
         height: 334px;
     }
     #showcase li img {
         height: 14.6em;
     }
-		.img_addon {
-			display: none;
-		}
-		#projects li {
-    width: 48%;
-    height: 293px;
-    margin-right: 2%;
-    margin-bottom: 10px;
+	.img_addon {
+		display: none;
+	}
+	#projects li {
+        width: 48%;
+        height: 293px;
+        margin-right: 2%;
+        margin-bottom: 10px;
     }
     #projects .button-standard {
     	padding: 5px;
     	letter-spacing: 0.2rem;
     }
-		#projects .info {
-			height: 14rem;
-		}
+	#projects .info {
+		height: 14rem;
+	}
 
 }
 @media screen and (max-width: 600px) {
@@ -835,6 +846,9 @@ footer ul.social li small {
 	}
     #projects .forks, #projects .stargazers {
         padding: 2px 0px 2px 20px;
+    }
+    .inner_section > ul li{
+        margin-bottom: 2.5em;
     }
 }
 
