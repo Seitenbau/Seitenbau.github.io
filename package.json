@@ -1,0 +1,19 @@
+{
+  "name": "Seitenbau-Github",
+  "version": "1.0.0",
+  "description": "Seitenbau Github Page",
+  "main": "index.html",
+  "repository": "https://github.com/Seitenbau/Seitenbau.github.io",
+  "author": "Seitenbau GmbH",
+  "license": "BSD-3-Clause",
+  "scripts": {
+    "lint": "npm run lint:js && npm run lint:css",
+    "lint:js": "node_modules/.bin/eslint . ",
+    "lint:css": "node_modules/.bin/stylelint css/*.css"
+  },
+  "devDependencies": {
+    "eslint": "^3.18.0",
+    "stylelint": "^7.9.0",
+    "stylelint-config-standard": "^16.0.0"
+  }
+}
