@@ -1,0 +1,15 @@
+{
+  "extends": "eslint:recommended",
+  "globals": {
+      "ol": true,
+      "$": true,
+      "document": true,
+      "window": true
+  },
+  "rules": {
+    "no-multiple-empty-lines": "error",
+    "indent": ["error", 2],
+    "comma-dangle": [2, "always-multiline"],
+    "quotes": ["error"]
+  }
+}
