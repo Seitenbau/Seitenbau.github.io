@@ -2,6 +2,5 @@ pipeline:
   build:
     image: node:latest
     commands:
-      - npm install yarn -g
       - yarn install
       - yarn run lint
