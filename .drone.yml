@@ -1,0 +1,6 @@
+pipeline:
+  build:
+    image: node:latest
+    commands:
+      - yarn install
+      - yarn run lint
