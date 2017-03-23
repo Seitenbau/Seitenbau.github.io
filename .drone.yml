@@ -1,6 +1,6 @@
 pipeline:
   build:
-    image: node:latest
+    image: node:7.7
     commands:
       - yarn install
       - yarn run lint
