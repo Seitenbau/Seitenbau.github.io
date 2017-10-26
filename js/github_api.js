@@ -8,7 +8,7 @@ $(document).ready(function () {
         "<div class='counts'><span class='stargazers'>"+obj.stargazers_count+"</span>" +
         "<span class='forks'>"+obj.forks_count+"</span></div>" +
         "<span class='language'>"+obj.language+"</span>" +
-        "<span class='description'>"+obj.description+"</span>" +
+        "<span class='description'>"+obj.description?obj.description:""+"</span>" +
         "</div>" +
         "<div class='button-standard'><span>"+obj.name+"</span></div>" +
         "</div></a></li>");
