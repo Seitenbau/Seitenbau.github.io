@@ -582,10 +582,11 @@ footer ul {
 footer a {
   color: #222;
   text-decoration: none;
+  text-decoration: underline;
 }
 
 footer a.link-footer {
-  margin: 0 0 2em;
+  margin: 0 0 1em;
   display: block;
 }
 
