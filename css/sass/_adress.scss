@@ -1,0 +1,77 @@
+dd {
+  margin: 0;
+}
+dd.dd-after::after {
+  content: '\A';
+  white-space: pre-line;
+}
+dd:last-of-type::after {
+  content: '';
+}
+
+dd, dt {
+  display: inline-block;
+}
+dt {width: 15%;}
+dd {width: 80%;}
+.dd-first {width: 100%;}
+dd, dt, .address {
+  vertical-align: middle;
+}
+dt::after {
+  content: ': ';
+}
+.address {
+  display: inline-block;
+  white-space: pre;
+}
+
+.contact h3 {
+  @media only screen and (min-width:$break_mobile) {
+    font-size: 0.625rem;
+    line-height:1rem;
+  }
+  @media only screen and (min-width:$break_tablet) {
+    font-size: 1rem;
+    line-height:1.5625rem;
+  }
+  @media only screen and (min-width:$break_desktop) {
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+  }
+}
+
+address {
+  line-height:$address_lineheight;
+  font-size: $address_font_size;
+  color: $address_color;
+  letter-spacing: .03rem;
+  margin-bottom: 2em;
+  font-style: normal;
+  p {
+    margin:0;
+  }
+  a {
+    line-height:$address_lineheight+.2rem;
+    color: $address_color;
+  }
+
+  .contact & {
+    float:none;
+    width: 100%;
+    @media only screen and (min-width:$break_mobile) {
+      font-size: 0.625rem;
+      line-height:1rem;
+    }
+    @media only screen and (min-width:$break_tablet) {
+      font-size: 1rem;
+      line-height:1.5625rem;
+    }
+    @media only screen and (min-width:$break_desktop) {
+      font-size: 1.125rem;
+      line-height: 1.75rem;
+    }
+
+  }
+}
+

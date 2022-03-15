@@ -1,0 +1,155 @@
+footer {
+  padding: $footer_pad_vertical_top $footer_side_space $footer_pad_vertical_bottom $footer_side_space;
+  background: $footer_bgcolor;
+  padding-bottom: 0.1em;
+  min-height:$footer_min_height;
+
+.inner_section {
+  margin-bottom: 1em;
+}
+
+h3 {
+
+  @media only screen and (min-width:$break_mobile) {
+    font-size: .75rem;
+    line-height:1.5625rem;
+  }
+  @media only screen and (min-width:$break_tablet) {
+    font-size: 1rem;
+    line-height:1.5625rem;
+  }
+
+  font-weight: 800;
+  letter-spacing: 0.08125rem;
+}
+
+.footerblock {
+  &:last-child {
+    @media only screen and (min-width:$break_tablet) {
+      float: right;
+      width: 26rem;
+    }
+  }
+
+  @media only screen and (min-width:$break_mobile) {
+    padding: 1rem 0;
+    float:none;
+    width: 100%;
+  }
+
+
+  @media only screen and (min-width:$break_tablet) {
+    float: left;
+    width: 49.6667%;
+  }
+}
+
+address, small, p, ul {
+  @media only screen and (min-width:$break_mobile) {
+    font-size: 0.875rem;
+    line-height:1.5rem;
+  }
+
+
+  line-height: 1.5em;
+  max-width: 20rem;
+}
+
+a {
+  color: #222;
+  text-decoration: none;
+  text-decoration: underline;
+}
+
+a.link-footer {
+  margin: 0 0 1em;
+  display: block;
+}
+
+a:hover, a:focus {
+  color: white;
+  transition: color 0.3s ease 0s;
+}
+
+ul {
+  padding-left: 0;
+}
+
+ul li {
+  list-style-type: none;
+}
+
+ul.social {
+  margin: 0 0 1.7em;
+}
+
+ul.social li {
+  display: inline;
+}
+
+ul.social li a {
+  display: inline-block;
+  background: black center center no-repeat;
+  height: 25px;
+  width: 25px;
+  margin: 0 8px 0 0;
+  border-radius: 25px;
+  text-indent: -100em;
+  overflow: hidden;
+  transition: background-color 0.2s linear;
+}
+
+ul.social li a:hover {
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+ul.social li a:focus {
+  outline: none;
+  background-color: rgba(255, 255, 255, 0.6);
+}
+
+ul.social li a.fb {
+  background-image: url("../img/facebook.svg");
+  background-size: auto 15px;
+}
+
+ul.social li a.in {
+  background-image: url("../img/instagram_icon.svg");
+  background-size: 25px auto;
+
+  &:hover {
+    background-image: url("../img/instagram.svg");
+  }
+}
+
+ul.social li a.xi {
+  background-image: url("../img/xing.svg");
+  background-size: auto 18px;
+}
+
+ul.social li a.gh {
+  background-image: url("../img/github.svg");
+  background-size: 25px auto;
+}
+
+ul.social li a.sb {
+  background-image: url("../img/seitenbau-bildmarke.svg");
+  background-size: auto 11px;
+}
+
+ul.social li small {
+  display: block;
+  font-size: 60%;
+  margin-top: 1em;
+}
+  @media only screen and (min-width:$break_tablet) {
+    .inner_section {
+      width: auto;
+      max-width: 71rem;
+      margin: 0 auto;
+    }
+    .footer_content {
+      margin: 0 auto;
+    }
+  }
+}

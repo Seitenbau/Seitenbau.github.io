@@ -1,0 +1,1136 @@
+html {
+  background: #f5f4f2;
+  color: #303639;
+}
+
+body {
+  background: url("../img/bg_blau_gruen.gif") center top repeat-y;
+  font-family: "Atlas Grotesk", Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  line-height: 1.25;
+}
+
+.inner_section > ul.projects li {
+  box-sizing: content-box;
+  height: auto;
+  margin-right: 7%;
+}
+
+.clip_mask {
+  overflow:hidden;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.btn {
+  font-family: "Brandon Grotesque", Arial, Helvetica, sans-serif;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 0.05rem;
+  line-height: .85rem;
+  font-size: .625rem;
+  font-weight: 700;
+  width: auto;
+  height: 2.5rem;
+  box-sizing: border-box;
+  text-align: center;
+  display: block;
+  padding: 0.85rem 0px;
+}
+
+.btn.one {
+  background-color: #19B4EB;
+  color: black;
+  position: relative;
+  z-index: 1;
+}
+
+.btn.dark {
+  background-color: #002D47;
+  color: #FFFFFF;
+  position: relative;
+  z-index: 1;
+}
+
+.world-graphic {
+  position: relative;
+  z-index: 0;
+}
+header h1,
+header h2 {
+  background: white;
+  font-family: "Brandon Grotesque", Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  font-size: 15px;
+  text-transform: uppercase;
+  letter-spacing: 0.25rem;
+  line-height: 2.2em;
+  margin: auto 0;
+}
+
+header h1 {
+  background: url("../img/sb_logo_white.svg") center center no-repeat;
+  height: 4em;
+  margin: 0 0 3em;
+  position: relative;
+}
+
+header h1 a {
+  overflow: hidden;
+  text-indent: 1000%;
+  display: block;
+  position: absolute;
+  width: 330px;
+  height: 38px;
+  margin: auto;
+  top: 0;
+  bottom: 0;
+  left: 450px;
+  padding: 20px;
+  white-space: pre;
+  color: transparent;
+}
+
+header {
+  letter-spacing: 0.15rem;
+}
+
+header h1 a {
+  width: 165px;
+  height: 19px;
+  left: 100px;
+}
+
+header h2 {
+  font-size: 1.5rem;
+  letter-spacing: inherit;
+}
+
+header section {
+  background-color: #002D47;
+  background-size: cover;
+  color: #FFFFFF;
+  overflow: hidden;
+}
+
+main {
+  background: #002D47;
+  margin-left: auto;
+  margin-right: auto;
+  transition: margin 0.1s ease-out;
+}
+
+main .icon_list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
+}
+
+main .icon_list li {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 100%;
+  flex: 1;
+  align-items: center;
+  justify-content: center;
+  padding: .2rem;
+}
+
+main .icon_list img {
+  width: 6rem;
+}
+
+main .icon_list img {
+  height: 6rem;
+}
+
+.inner_section {
+  padding: 4em 0 0;
+  margin: 0 0 7em;
+}
+#match em,
+.inner_section h2 {
+  margin-left: 2rem;
+  margin-right: 2rem;
+}
+
+#match h2 {
+  background: none;
+}
+
+.inner_section ul {
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+}
+
+#projects .inner_section h2, .inner_section ul.projects {
+  padding-left: 0;
+  padding-right: 0;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+header h1 {
+  background-size: auto 0.625rem;
+}
+
+header h2 {
+  border-bottom: 0 none;
+  background: none;
+  text-align: center;
+  line-height: 1.3em;
+}
+#match em,
+#blog em,
+header em {
+  color: #19B4EB;
+  font-family: "Brandon Grotesque", Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  text-align: center;
+  display: block;
+  text-transform: uppercase;
+  font-size: .75rem;
+  letter-spacing: 0.25rem;
+  line-height: 2em;
+}
+
+
+#blog em {
+    background: url("../img/lines3.png") top center no-repeat;
+    line-height: 3.5rem;
+}
+
+
+#match em {
+  background: url(../img/lines_invert3.png) top left no-repeat;
+  text-align: left;
+  line-height: 3.5rem;
+  margin-bottom: -1.5rem;
+}
+
+#match p {
+  text-align: left;
+}
+
+.inner_section > ul {
+  list-style: none;
+  margin: 0;
+  overflow: hidden;
+}
+
+h2 {
+  background: url("../img/lines2.png") 0 0 no-repeat;
+  font-family: "Brandon Grotesque", Arial, Helvetica, sans-serif;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.25rem;
+  font-size: 110%;
+  padding: 1.2rem 0 0 0;
+  margin: 0 0 1.8em 0.3em;
+}
+
+h2.invert_h2 {
+  background: url("../img/lines_invert2.png") 0 0 no-repeat;
+}
+
+h3 {
+  font-family: "Brandon Grotesque", Arial, Helvetica, sans-serif;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.25rem;
+  font-size: 100%;
+  margin: 0 0 0.7em;
+}
+
+section.box {
+  background: white;
+  overflow: hidden;
+}
+
+#claim {
+  margin-top: -2em;
+  color: #FFFFFF;
+  background: #00609a;
+}
+
+#claim p {
+  font-size: 175%;
+  margin: 0 12em 0 0;
+}
+
+section section {
+  position: relative;
+  overflow: hidden;
+  background-size: 130% auto !important;
+}
+
+section section h2 {
+  margin-top: 1em;
+}
+
+section section img, section section .img {
+  width: 75px;
+  height: 75px;
+  position: absolute;
+  bottom: 4em;
+  right: 3em;
+  pointer-events: none;
+}
+
+/* GITHUB PROJEKTE */
+#projects {
+  background-color: #E5E5E5;
+}
+
+
+#projects ul {
+  margin: 0 auto;
+}
+
+#projects li::before {
+  content: none;
+  display: none;
+}
+
+#projects li {
+  list-style: none;
+  width: 23%;
+  height: auto;
+  display: block;
+  float: left;
+  text-indent: 0;
+  margin-right: 2%;
+  margin-bottom: 25px;
+  box-sizing: border-box;
+  padding: 0;
+  background: #fff;
+}
+
+#projects li a {
+  text-decoration: none;
+}
+
+#projects .info {
+
+  /*height: 2rem;*/
+  color: #022032;  /*padding: 10px 15px;*/
+  font-family: "Atlas Grotesk", Arial, Helvetica, sans-serif;
+  font-weight: normal;
+  font-size: 87%;
+  line-height: 1.6rem;
+}
+
+#projects .info-row {
+  padding: .2rem .9rem;
+  font-family: "Atlas Grotesk", Arial, Helvetica, sans-serif;
+  color: #022032;
+  font-weight: normal;
+  font-size: .9rem;
+  line-height: 1.6rem;
+  border-top: 1px solid #F2F5F6;
+  background-color: #FFFFFF;
+}
+
+#projects .stargazers {
+  background: url("../img/stargazer.png") no-repeat 0 0;
+  padding-left: 20px;
+  margin-right: 10px;
+}
+
+#projects .forks {
+  background: url("../img/fork.png") no-repeat 0 0;
+  padding-left: 20px;
+}
+
+#projects .counts {
+  float: left;
+}
+
+#projects .language {
+  text-align: right;
+  display: block;
+  float: right;
+}
+
+#projects .info .description {
+
+  /*margin-top: 50px;*/
+  text-align: center;
+  padding: 0 20px;
+}
+
+#projects .button-standard {
+  background: #FFFFFF;
+  display: block;
+  min-height: 2rem;
+  padding: 15px;
+  font-family: "Atlas Grotesk Bold", Arial, Helvetica, sans-serif;
+  font-weight: 900;
+  text-transform: inherit;
+  letter-spacing: 0.25rem;
+}
+
+#projects .button-standard span {
+  color: #006CB6;
+  vertical-align: text-bottom;
+  word-wrap: break-word;
+  line-height: 2rem
+}
+
+#projects a:hover {
+  border-color: #002d47;
+}
+
+#projects a:hover .button-standard {
+  background-color: #002d47;
+  color: #0f0;
+  transition: color 0.3s ease 0s;
+}
+
+#skills li::before, #tools li::before {
+  color: 022032;
+}
+
+#languages h2, #soft h2 {
+  border-bottom-color: white;
+}
+
+.soft_list li {
+  height: 3rem;
+}
+
+.soft_list div {
+  height: 2.1875rem;
+}
+
+.soft_list span {
+  display: inline-block;
+  vertical-align: .875rem;
+  height: 2.1875rem;
+}
+
+.soft_list img {
+  position: static;
+  width: 2.1875rem;
+  height: 2.1875rem;
+}
+
+#skills {
+  background-color: #E5E5E5;
+}
+
+#languages {
+  color: white;
+  background: #002d47 url("../img/mountains-white.svg") center bottom no-repeat;
+}
+
+#tools {
+  background: transparent url("../img/mountains-cyan.svg") center bottom no-repeat;
+}
+
+#soft {
+  color: white;
+  background: #002D47 url(../img/soft_bg.svg) -3.75rem 0.1875rem no-repeat;
+}
+
+#skills .img img {
+  bottom: 0;
+  right: 0;
+}
+
+#skills .img img {
+  position: absolute;
+  right: 2000%;
+  bottom: 2em;
+  transform: rotate(15deg);
+  transition: bottom 1.5s ease-in-out, right 1.5s ease-out, transform 1.5s linear;
+}
+
+#skills .img.active img {
+  bottom: 4em;
+  right: 3em;
+  transform: rotate(0deg);
+}
+
+#languages .img {
+  overflow: hidden;
+  height: 40px;
+  margin-bottom: 25px;
+  width: 65px;
+  margin-right: 5px;
+}
+
+#languages .img img {
+  top: 100%;
+  left: -40px;
+  width: 150px;
+  right: auto;
+  bottom: auto;
+  height: auto;
+  transition: top 3s linear;
+}
+
+#languages .img.active img {
+  top: -250%;
+}
+
+#tools .img img {
+  bottom: 0;
+  right: 0;
+}
+
+#tools .img img {
+  transform: rotate(0deg);
+  transition: transform 4s ease-in-out;
+}
+
+#tools .img.active img {
+  transform: rotate(360deg);
+}
+
+#soft .img img {
+  bottom: 0;
+  right: 0;
+}
+
+#soft .img img:last-of-type {
+  opacity: 0;
+  transition: opacity 3s ease-in-out;
+}
+
+#soft .img.active img:last-of-type {
+  opacity: 1;
+}
+
+#showcase .img {
+  right: 10px;
+}
+
+#showcase .img img {
+  transition: margin-bottom 2s cubic-bezier(0.7, 0.1, 0.8, 0.2);
+  transform: rotate(314deg);
+  bottom: 0;
+  right: 0;
+}
+
+#showcase .img.active img {
+  margin-bottom: 900px;
+}
+
+#showcase {
+  background: #f2f5f6 url("../img/mountains-white.svg") center bottom no-repeat;
+}
+
+#showcase h3 {
+  line-height: 2.25em;
+}
+
+#showcase ul {
+  margin: 0 auto;
+}
+
+#showcase li {
+  margin: 0;
+  padding: 0;
+}
+
+#showcase li {
+  list-style: none;
+  float: none;
+  width: auto;
+  height: 0;
+}
+
+#showcase li::before {
+  content: none;
+  display: none;
+}
+
+#showcase li a {
+  position: relative;
+  width: 30%;
+  height: 340px;
+  display: block;
+  float: left;
+  text-indent: 0;
+  margin-right: 2%;
+  margin-bottom: 10px;
+  box-sizing: border-box;
+}
+
+#showcase li:nth-child(3n) a {
+  margin-right: 0;
+}
+
+#showcase li img {
+  position: absolute;
+  top: 0;
+  bottom: 55px;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 100%;
+  height: 11.6em;
+}
+
+#showcase li span {
+  background: #fff;
+  display: block;
+  line-height: 25px;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  padding: 0.7em 1em;
+  font-family: "Brandon Grotesque", Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 65%;
+}
+
+#showcase li a {
+  color: #002d47;
+}
+
+#showcase li:hover a {
+  border-color: #002d47;
+}
+
+#showcase li:hover span {
+  background-color: #002d47;
+  color: #0f0;
+  transition: color 0.3s ease 0s;
+}
+
+.city {
+  overflow: hidden;
+}
+
+address, aside {
+  font-style: normal;
+  white-space: pre-line;
+  font-size: 87%;
+  line-height: 1.7em;
+  margin: 0;
+}
+
+aside::before {
+  content: '';
+  display: block;
+  width: 5%;
+  border-top: 2px solid #cdcdcd;
+  margin-bottom: 1em;
+  margin-top: 1em;
+}
+
+.map {
+  float: right;
+  margin-bottom: 1em;
+  width: 600px;
+  height: 400px;
+  background: rgb(0, 20, 80);
+}
+
+.popup {
+  padding-bottom: 48px;
+}
+
+.popover {
+  font-family: "Atlas Grotesk", Arial, Helvetica, sans-serif;
+}
+
+.ol-attribution ul {
+  font-size: 11px;
+}
+
+.clearfix {
+  clear: both;
+  display: block;
+}
+
+footer {
+  background: #19b4eb;
+  padding-bottom: 0.1em;
+}
+
+footer .inner_section {
+  margin-bottom: 1em;
+}
+
+footer h3 {
+  font-size: 75%;
+  font-weight: 700;
+  letter-spacing: 0.08125rem;
+}
+
+footer .footerblock {
+  float: left;
+  width: 49.6667%;
+}
+
+footer address {
+  margin: -15px 0 30px 0;
+}
+
+footer address, footer small, footer p, footer ul {
+  font-size: 77%;
+  line-height: 1.5em;
+}
+
+footer a {
+  color: #222;
+  text-decoration: none;
+  text-decoration: underline;
+}
+
+footer a.link-footer {
+  margin: 0 0 1em;
+  display: block;
+}
+
+footer a:hover, footer a:focus {
+  color: white;
+  transition: color 0.3s ease 0s;
+}
+
+footer ul {
+  padding-left: 0;
+}
+
+footer ul li {
+  list-style-type: none;
+}
+
+footer ul.social {
+  margin: 0 0 1.7em;
+}
+
+footer ul.social li {
+  display: inline;
+}
+
+footer ul.social li a {
+  display: inline-block;
+  background: black center center no-repeat;
+  height: 25px;
+  width: 25px;
+  margin: 0 8px 0 0;
+  border-radius: 25px;
+  text-indent: -100em;
+  overflow: hidden;
+  transition: background-color 0.2s linear;
+}
+
+footer ul.social li a:hover {
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+footer ul.social li a:focus {
+  outline: none;
+  background-color: rgba(255, 255, 255, 0.6);
+}
+
+footer ul.social li a.fb {
+  background-image: url("../img/facebook.svg");
+  background-size: auto 15px;
+}
+
+footer ul.social li a.xi {
+  background-image: url("../img/xing.svg");
+  background-size: auto 18px;
+}
+
+footer ul.social li a.gh {
+  background-image: url("../img/github.svg");
+  background-size: 25px auto;
+}
+
+footer ul.social li a.sb {
+  background-image: url("../img/seitenbau-bildmarke.svg");
+  background-size: auto 11px;
+}
+
+footer ul.social li small {
+  display: block;
+  font-size: 60%;
+  margin-top: 1em;
+}
+
+
+#showcase li a {
+  height: 311px;
+}
+
+#projects .info {
+  font-size: 80%;
+  line-height: 1.4rem;
+}
+
+#projects .counts, #projects .language {
+  font-size: 100%;
+}
+
+#showcase li a {
+  width: 40%;
+}
+
+#showcase li:nth-child(3n) a {
+  margin-right: 2%;
+}
+
+#showcase li:nth-child(2n) a {
+  margin-right: 0;
+}
+
+#projects .info .description {
+
+  /*margin-top: 40px;*/
+  padding: 0 5px;
+}
+
+header h1 a {
+  left: 272px;
+}
+
+#showcase li span {
+  min-height: 50px;
+}
+
+#showcase li a {
+  width: 48.5%;
+}
+
+.map {
+  float: none;
+  width: 100%;
+}
+
+section address {
+  float: left;
+  margin-bottom: 2em
+}
+
+aside {
+  float: right;
+}
+
+aside::before {
+  display: none;
+}
+
+#projects li {
+  width: 31.3%;
+  height: 320px;
+  margin-right: 2%;
+  margin-bottom: 15px;
+}
+
+#projects .button-standard {
+  padding: 10px;
+}
+
+header h1 a {
+  left: 138px;
+}
+
+section > ul.projects {
+  margin-bottom: 3em;
+}
+
+section > ul.projects li {
+  width: auto;
+  margin-right: 0;
+  float: none;
+  margin-bottom: 0.7em;
+}
+
+.inner_section {
+  margin-bottom: 3em;
+}
+
+.inner_section > ul.projects li {
+  margin-bottom: 3.5em;
+}
+
+#showcase li a {
+  width: 400px;
+  margin-left: auto;
+  margin-right: auto;
+  height: 334px;
+}
+
+#showcase li img {
+  height: 14.6em;
+}
+
+.img_addon {
+  display: none;
+}
+
+#projects li {
+  width: 100%;
+  height: auto;
+  margin-right: 2%;
+  margin-bottom: 10px;
+}
+
+#projects .button-standard {
+  padding: 5px;
+  letter-spacing: 0.2rem;
+}
+
+#projects .info-row {
+  color: #006CB6;
+  font-size: .8rem;
+}
+
+
+#projects {
+  padding: 0 1.25rem;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+address, aside {
+  float: none;
+}
+
+aside {
+  margin-bottom: 2em;
+  padding-bottom: 1em;
+}
+
+.city:last-of-type address {
+  margin: 0;
+}
+
+#claim p {
+  font-size: 125%;
+}
+
+#showcase li a {
+  width: 324px;
+  margin-left: auto;
+  margin-right: auto;
+  height: 290px;
+}
+
+#showcase li span {
+  line-height: 18px;
+  min-height: 36px;
+  margin-bottom: 10px;
+}
+
+footer::before {
+  height: 30px;
+  background-size: 75% 30px;
+}
+
+#projects .info {
+  font-size: 80%;
+  line-height: 1.2rem;
+}
+
+#projects .forks, #projects .stargazers {
+  padding: 2px 0 2px 20px;
+}
+
+.inner_section > ul.projects li {
+  margin-bottom: 2.5em;
+}
+
+.project .inner .info {
+  display: block;
+  position: relative;
+  top: initial;
+  right: initial;
+  width: auto;
+  height: auto;
+  background-color: #FFFFFF;
+}
+
+#projects .hint {
+  display: none;
+}
+
+}
+
+.browserupgrade {
+padding: 2em;
+background: #ffc;
+margin: 0;
+}
+
+@media only screen and (min-width:320px) {
+
+.world-graphic {
+  top: -4.5rem;
+  left: -6.8rem;
+  width: 150%;
+}
+
+
+header h1 {
+  margin-bottom: 3em;
+}
+
+header h2 {
+    font-size: 1.5rem;
+}
+
+header section {
+  height: 48.25rem;
+}
+
+.black_p_light,
+.white_p_dark {
+  font-size: .625rem;
+  letter-spacing: 0.035rem;
+  text-align:center;
+  margin: 1rem 0;
+  padding: 0 2rem;
+}
+
+.black_p_light {
+  color:#022032;
+  background-color:#FFFFFF;
+  padding: .5rem 1.5rem .5rem 1.5rem;
+}
+
+main section.icons {
+  padding: 0 2rem 2rem 2rem;
+}
+
+.box h2 {
+  font-size: 1.125rem;
+}
+
+.soft_list span {
+ font-size: .875rem;
+  }
+
+header .primary {
+  margin:0 2rem;
+}
+
+#projects .button-standard {
+  text-align: left;
+  font-size: .65rem;
+}
+
+.project .inner {
+  position: relative;
+}
+
+.project .inner .info {
+  display: none;
+  position: absolute;
+  top: 0;
+  right: -100%;
+  width: 100%;
+  height: 100%;
+  background-color: #FFFFFF;
+}
+
+.project .inner .info .description {
+  margin: .5rem;
+  display: inline-block;
+}
+
+.project .inner .hint {
+  cursor: defaut;
+  display: block;
+  height: 1.5rem;
+  width: 1.5rem;
+  box-sizing: border-box;
+  position: absolute;
+  bottom: .9rem;
+  right: .6rem;
+  background-image: url('../img/info.svg');
+}
+
+#soft .inner_section ,
+#location .inner_section,
+#skills .inner_section,
+#projects .inner_section {
+  padding: 1.25rem 0 0;
+}
+
+#match {
+   background: #002D47;
+}
+
+#match .inner_section {
+  padding: 3.575rem 0 0;
+}
+
+#match h2 ,
+#match p {
+  color:#FFFFFF;
+}
+
+#match h2 {
+  font-size: 1.5rem;
+}
+
+.inner-section {
+  padding: 0 1.25rem;
+}
+
+.do_list li div {
+  background-color: #FFFFFF;
+  width: 100%;
+  height: auto;
+  min-height:6rem;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.do_list li div a {
+  color: #022032;
+  display: table;
+  vertical-align: middle;
+  text-decoration: none;
+  font-family: "Brandon Grotesque", Arial, Helvetica, sans-serif;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.125rem;
+  font-size: .875rem;
+  width: 100%;
+  height: auto;
+  min-height:6rem;
+}
+
+.do_list li div a span {
+  display: inline-block; /* old IE fix*/
+  display: table-cell;
+  vertical-align: middle;
+  width: 75%;
+}
+
+#blog {
+  height: 14rem;
+  padding: 3rem 1.5rem 3rem 1.5rem;
+  background: url(../img/sb_hq_320.png) -50px 0px /169% no-repeat;
+}
+
+#blog h2 {
+  background:none;
+  color:#022032;
+  font-size: 1.5rem;
+  letter-spacing: .18rem;
+  text-align:center;
+  padding:0;
+  margin-top:-.5rem;
+  margin-bottom: 1rem;
+}
+
+
+}

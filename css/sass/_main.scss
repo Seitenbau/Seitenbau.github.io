@@ -1,0 +1,66 @@
+main {
+  margin-left: auto;
+  margin-right: auto;
+  transition: margin 0.1s ease-out;
+
+  .icon_list_container {
+    @media only screen and (min-width:$break_mobile) {
+      min-height: 13.4rem;
+    }
+    @media only screen and (min-width:$break_tablet) {
+      min-height: 6.2rem;
+    }
+  }
+
+  .icon_list {
+    width: 100%;
+    min-height: 6rem;
+
+    @media only screen and (min-width:$break_mobile2) {
+      max-width: 23.75rem;
+      margin: 0 auto;
+    }
+    @media only screen and (min-width:$break_tablet) {
+      max-width: unset;
+    }
+
+
+    .icons {
+      padding: 0 $side_space 4.6875rem $side_space;
+
+      @media only screen and (min-width: $break_mobile2) {
+        padding-bottom: 10rem;
+      }
+      @media only screen and (min-width: $break_tablet) {
+        padding-bottom: 4.6875rem;
+      }
+    }
+    li {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      @media only screen and (min-width:$break_mobile2) {
+        float:left;
+        width: 50%;
+      }
+    }
+    img {
+        width: 6rem;
+        height: 6rem;
+        padding: .2rem;
+        flex: 1;
+        z-index:2;
+
+      @media only screen and (min-width:$break_mobile) {
+        padding: .2rem .2rem 1rem .2rem;
+      }
+      @media only screen and (min-width:$break_tablet) {
+        padding: .2rem;
+      }
+      }
+  }
+
+
+}

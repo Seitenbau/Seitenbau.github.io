@@ -1,0 +1,409 @@
+@import 'sass/variables';
+@import 'sass/mixins';
+@import 'sass/header';
+@import 'sass/main';
+@import 'sass/footer';
+@import 'sass/section';
+@import 'sass/buttons';
+@import 'sass/adress';
+@import 'sass/graphics';
+@import 'sass/showcase';
+@import 'sass/text';
+@import "sass/prettydropdowns";
+
+html {
+  background: $html_bg_color;
+  color: $html_color;
+}
+
+
+.column {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 60;
+  display: none;
+  width: $col_width;
+  height: 100%;
+
+  @media only screen and (min-width:$break_tablet) {
+    display: block;
+  }
+
+}
+
+.dark_col {
+  background-color: $darkcol_bgcolor;
+}
+
+.green_col {
+  background-color:$greencol_bgcolor;
+  top: 0;
+  right: 0;
+  left: auto;
+}
+
+body {
+  font-family: "Atlas Grotesk", Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  line-height: 1.25;
+  background-color: $sb_color1;
+}
+
+.ally-hide {
+  position:absolute;
+  left:-10000px;
+  top:auto;
+  width:1px;
+  height:1px;
+  overflow:hidden;
+}
+
+.inner_section > ul.projects li {
+  box-sizing: content-box;
+  height: auto;
+  margin-right: 7%;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+
+#projects .inner_section h2, .inner_section ul.projects {
+  padding-left: 0;
+  padding-right: 0;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+
+.inner_section > ul {
+  list-style: none;
+  margin: 0;
+  overflow: hidden;
+  header section & {
+    overflow: visible;
+  }
+}
+
+
+#claim {
+  margin-top: -2em;
+  color: #FFFFFF;
+  background: $sb_color4;
+}
+
+#claim p {
+  font-size: 175%;
+  margin: 0 12em 0 0;
+}
+
+section section {
+  position: relative;
+  overflow: hidden;
+  background-size: 130% auto !important;
+}
+
+
+
+#skills li::before, #tools li::before {
+  color: $sb_color1;
+}
+
+#languages h2, #soft h2 {
+  border-bottom-color: white;
+}
+
+#skills {
+  background-color: $sb_color5;
+}
+
+#languages {
+  color: white;
+  background: $sb_color1 url("../img/mountains-white.svg") center bottom no-repeat;
+}
+
+#tools {
+  background: transparent url("../img/mountains-cyan.svg") center bottom no-repeat;
+}
+
+
+#touch {
+  background-color: $sb_color1;
+  background-image: url(../img/footer_illu_left.svg),  url(../img/footer_illu.svg), url(../img/footer_illu_right.svg);
+  background-position: left top,center center, right top;
+  background-repeat: no-repeat, no-repeat, no-repeat;
+
+
+}
+
+#skills .img img {
+  bottom: 0;
+  right: 0;
+}
+
+#skills .img img {
+  position: absolute;
+  right: 2000%;
+  bottom: 2em;
+  transform: rotate(15deg);
+  transition: bottom 1.5s ease-in-out, right 1.5s ease-out, transform 1.5s linear;
+}
+
+#skills .img.active img {
+  bottom: 4em;
+  right: 3em;
+  transform: rotate(0deg);
+}
+
+#languages .img {
+  overflow: hidden;
+  height: 40px;
+  margin-bottom: 25px;
+  width: 65px;
+  margin-right: 5px;
+}
+
+#languages .img img {
+  top: 100%;
+  left: -40px;
+  width: 150px;
+  right: auto;
+  bottom: auto;
+  height: auto;
+  transition: top 3s linear;
+}
+
+#languages .img.active img {
+  top: -250%;
+}
+
+#tools .img img {
+  bottom: 0;
+  right: 0;
+}
+
+#tools .img img {
+  transform: rotate(0deg);
+  transition: transform 4s ease-in-out;
+}
+
+#tools .img.active img {
+  transform: rotate(360deg);
+}
+
+#soft .img img {
+  bottom: 0;
+  right: 0;
+}
+
+#soft .img img:last-of-type {
+  opacity: 0;
+  transition: opacity 3s ease-in-out;
+}
+
+#soft .img.active img:last-of-type {
+  opacity: 1;
+}
+
+
+.city {
+  overflow: hidden;
+}
+
+aside {
+  font-style: normal;
+  white-space: pre-line;
+  font-size: 87%;
+  line-height: 1.7em;
+  margin: 0;
+}
+
+aside::before {
+  content: '';
+  display: block;
+  width: 5%;
+  border-top: 2px solid #cdcdcd;
+  margin-bottom: 1em;
+  margin-top: 1em;
+}
+
+.map {
+  float: right;
+  margin-bottom: 1em;
+  width: 600px;
+  height: 400px;
+  background: rgb(0, 20, 80);
+}
+
+.popup {
+  padding-bottom: 48px;
+}
+
+.popover {
+  font-family: "Atlas Grotesk", Arial, Helvetica, sans-serif;
+}
+
+.ol-attribution ul {
+  font-size: 11px;
+}
+
+.clearfix {
+  clear: both;
+  display: block;
+}
+
+#showcase li a {
+  height: 311px;
+}
+
+#projects .info {
+  font-size: 80%;
+  line-height: 1.4rem;
+}
+
+#projects .counts, #projects .language {
+  font-size: 100%;
+}
+
+#showcase li a {
+  width: 40%;
+}
+
+#showcase li:nth-child(3n) a {
+  margin-right: 2%;
+}
+
+#showcase li:nth-child(2n) a {
+  margin-right: 0;
+}
+
+#projects .info .description {
+
+  /*margin-top: 40px;*/
+  padding: 0 5px;
+}
+
+header h1 a {
+  left: 272px;
+}
+
+#showcase li span {
+  min-height: 50px;
+}
+
+#showcase li a {
+  width: 48.5%;
+}
+
+.map {
+  float: none;
+  width: 100%;
+}
+
+aside {
+  float: right;
+}
+
+aside::before {
+  display: none;
+}
+
+
+header h1 a {
+  left: 138px;
+}
+
+section > ul.projects {
+  margin-bottom: 3em;
+}
+
+section > ul.projects li {
+  width: auto;
+  margin-right: 0;
+  float: none;
+  margin-bottom: 0.7em;
+}
+
+.inner_section > ul.projects li {
+  margin-bottom: 3.5em;
+}
+
+#showcase li a {
+  width: 400px;
+  margin-left: auto;
+  margin-right: auto;
+  height: 334px;
+}
+
+#showcase li img {
+  height: 14.6em;
+}
+
+.img_addon {
+  display: none;
+}
+
+#projects li {
+  width: 100%;
+  height: auto;
+  margin-right: 2%;
+  margin-bottom: 10px;
+}
+
+#projects .info-row {
+  display: block;
+  color: $sb_color4;
+  font-size: .8rem;
+}
+
+aside {
+  float: none;
+}
+
+aside {
+  margin-bottom: 2em;
+  padding-bottom: 1em;
+}
+
+.city:last-of-type address {
+  margin: 0;
+}
+
+#claim p {
+  font-size: 125%;
+}
+
+#showcase li a {
+  width: 324px;
+  margin-left: auto;
+  margin-right: auto;
+  height: 290px;
+}
+
+#showcase li span {
+  line-height: 18px;
+  min-height: 36px;
+  margin-bottom: 10px;
+}
+
+footer::before {
+  height: 30px;
+  background-size: 75% 30px;
+}
+
+
+.inner_section > ul.projects li {
+  margin-bottom: 2.5em;
+}
+
+
+.browserupgrade {
+padding: 2em;
+background: #ffc;
+margin: 0;
+}
+

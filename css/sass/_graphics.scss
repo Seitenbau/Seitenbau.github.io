@@ -1,0 +1,143 @@
+.clip_mask {
+    overflow:hidden;
+    display: block;
+    margin-right:-($side_space);
+    margin-left:-($side_space);
+
+  .contact & {
+    @media only screen and (min-width:$break_mobile) {
+      &:first-child {
+        margin: 0;
+      }
+      margin:$section_pad_vertical 0 0 0;
+    }
+
+  }
+  header & {
+    @media only screen and (min-width:$break_mobile) {
+      height: 35rem;
+    }
+    @media only screen and (min-width:$break_tablet) {
+      height: 26rem;
+    }
+    @media only screen and (min-width:$break_desktop) {
+      height: 32rem;
+      width: 40rem;
+    }
+  }
+
+  #touch &,
+  #blog & {
+    position:absolute;
+    top:0;
+  }
+
+
+  #touch & {
+    top: 0;
+    bottom:0;
+    left:0;
+    right:0;
+  }
+  @media only screen and (min-width:$break_desktop3) {
+    width: 100%;
+  }
+
+}
+
+.clip_mask {
+  z-index: 0;
+}
+
+.blog_pic,
+picture {
+  margin: -0.15rem;
+  z-index: 0;
+}
+
+.blog_pic {
+  .graphic {
+    height:100%;
+    width: auto;
+    @media only screen and (min-width:$break_mobile) {
+      left: -40%;
+    }
+    @media only screen and (min-width:$break_tablet) {
+      left: -20%;
+    }
+    @media only screen and (min-width:$break_desktop) {
+      left: 0;
+    }
+    @media only screen and (min-width:$break_desktop2) {
+      width: 100%;
+      left: 0;
+    }
+  }
+}
+
+
+
+.graphic {
+	position: relative;
+	z-index: 0;
+  width:100%;
+
+  .contact & {
+    @media only screen and (min-width:$break_desktop) {
+      max-width: 26.25rem;
+    }
+  }
+}
+.svg.land {
+  margin-top: 0;
+  @media only screen and (min-width:$break_tablet) {
+    margin-top: -10%;
+  }
+}
+.svg.heart {
+  margin-top: 0;
+  @media only screen and (min-width:$break_tablet) {
+    margin-top: -10%;
+  }
+
+}
+
+.svg.world {
+  width:auto;
+  z-index:0;
+  background-color: $header_section_bgcolor;
+  -webkt-transform: scale(1.5) translate(-4%, -9%);
+  transform: scale(1.5) translate(-4%, -9%);
+  @media only screen and (min-width:$break_mobile) {
+
+    #touch & {
+      position: relative;
+      margin-bottom: -1rem;
+      left:-26.25rem;
+      width: 220%;
+    }
+  }
+  @media only screen and (min-width:$break_mobile2) {
+    -webkt-transform: scale(1.5) translate(-5%, -12%);
+    transform: scale(1.5) translate(-5%, -12%);
+  }
+
+  @media only screen and (min-width:$break_tablet) {
+    -webkt-transform: scale(.9) translate(-36%, -26%);
+    transform: scale(.9) translate(-36%, -26%);
+    .flex_list & {
+      min-width: 42em;
+      position: relative;
+    }
+  }
+
+  @media only screen and (min-width: $break_desktop) {
+    -webkt-transform: scale(1) translate(-26%, -28%);
+    transform: scale(1) translate(-26%, -28%);
+    .flex_list & {
+      min-width: 53em;
+      position: relative;
+
+    }
+  }
+}

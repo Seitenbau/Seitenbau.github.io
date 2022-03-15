@@ -1,0 +1,94 @@
+header
+{
+  letter-spacing: 0.15rem;
+
+  h1, h2 {
+    background: white;
+    font-family: "Brandon Grotesque", Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 15px;
+    text-transform: uppercase;
+    letter-spacing: 0.25rem;
+    line-height: 2.2em;
+    margin: auto 0;
+  }
+
+  h1 {
+    background: url("../img/sb_logo_white.svg") center center no-repeat;
+    height: 4em;
+    margin: 0 0 3em;
+    position: relative;
+  }
+
+  h1 a {
+    overflow: hidden;
+    text-indent: 1000%;
+    display: block;
+    position: absolute;
+    width: 330px;
+    height: 38px;
+    margin: auto;
+    top: 0;
+    bottom: 0;
+    left: 450px;
+    padding: 20px;
+    white-space: pre;
+    color: transparent;
+  }
+
+  h1 a {
+    width: 165px;
+    height: 19px;
+    left: 100px;
+  }
+
+
+
+  h1 {
+    background-size: auto 0.625rem;
+    @media only screen and (min-width:$break_mobile) {
+      background-size: auto 0.625rem;
+    }
+    @media only screen and (min-width:$break_tablet) {
+      background-size: auto 1rem;
+    }
+    @media only screen and (min-width:$break_desktop) {
+      background-size: auto 1.5rem;
+    }
+    z-index:1;
+
+    @media only screen and (min-width:$break_mobile) {
+      margin-bottom: 3em;
+    }
+  }
+
+  h2 {
+    font-size: 1.5rem;
+    letter-spacing: inherit;
+    border-bottom: 0 none;
+    background: none;
+    text-align: center;
+    line-height: 1.3em;
+
+    @media only screen and (min-width:$break_mobile) {
+      font-size: 1.5rem;
+      margin-left: -($side_space);
+      margin-right: -($side_space);
+    }
+
+  }
+  section {
+    @media only screen and (min-width:$break_tablet) {
+      div {
+        padding-top: 1rem;
+        margin-top:-1rem;
+      }
+    }
+    @media only screen and (min-width:$break_desktop) {
+      div {
+        padding-top: 5rem;
+        margin-top:-2rem;
+      }
+    }
+  }
+}

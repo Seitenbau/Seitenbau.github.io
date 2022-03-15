@@ -1,0 +1,184 @@
+h2 {
+  background-image: url("../img/lines2.png");
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  font-family: $h2_font;
+  font-weight: $h2_weight;
+  text-transform: uppercase;
+  letter-spacing: 0.25rem;
+  padding: 1rem 0 $vertical_text_space 0;
+  margin: 0;
+  font-size: 1.125rem;
+  position:relative;
+  z-index: 1;
+
+  @media only screen and (min-width:$break_mobile) {
+    background-position-y: -.1875rem;
+  }
+  @media only screen and (min-width:$break_tablet) {
+    background-position-y: 0;
+    font-size: 1.5rem;
+  }
+
+  #touch & {
+    @media only screen and (min-width:$break_mobile) {
+      font-size: 1.5rem;
+    }
+    @media only screen and (min-width:$break_tablet) {
+      font-size: 2.625rem;
+    }
+    @media only screen and (min-width:$break_desktop) {
+      font-size: 3.25rem;
+    }
+  }
+
+  header section & {
+    padding-top:0;
+    @media only screen and (min-width:$break_mobile1_2) {
+      margin: 0 auto;
+      width: 20rem;
+    }
+
+
+    @media only screen and (min-width:$break_tablet) {
+      padding-top:1.5rem;
+      width: auto;
+    }
+  }
+
+
+  .match & {
+    @media only screen and (min-width:$break_mobile) {
+      background: none;
+      font-size: 1.5rem;
+    }
+  }
+
+  #blog & {
+    @media only screen and (min-width:$break_mobile) {
+      background: none;
+      color: $blog_h2_color;
+      font-size: 1.5rem;
+      letter-spacing: .18rem;
+      text-align: center;
+      padding: 0;
+      margin-top: -.5rem;
+      margin-bottom: 1rem;
+    }
+    @media only screen and (min-width:$break_tablet) {
+      font-size: 2.625rem;
+    }
+
+  }
+  #touch & {
+    color: $touch_h2_color;
+    background: none;
+    padding-top:0;
+  }
+
+}
+
+h2.invert_h2 {
+  background-image: url("../img/lines_invert2.png");
+}
+
+h3 {
+  font-family: $h3_font;
+  font-weight: $h3_weight;
+  text-transform: uppercase;
+  letter-spacing: 0.25rem;
+  font-size: 100%;
+  margin: 0 0 0.7em;
+  position:relative;
+  z-index: 1;
+
+}
+
+.black_p_light,
+.white_p_dark {
+  font-size: .625rem;
+  line-height: 1rem;
+  letter-spacing: $p_letter_space;
+  text-align:center;
+  margin: $vertical_text_space 0 $vertical_text_space 0;
+  position:relative;
+  z-index: 1;
+
+  @media only screen and (min-width:$break_tablet) {
+    font-size: 1rem;
+    line-height: 1.5625rem;
+  }
+  @media only screen and (min-width:$break_desktop) {
+    font-size: 1.125rem;
+    line-height: 1.875rem;
+  }
+
+}
+
+.black_p_light {
+  color: $black_p_light_color;
+  background-color: $black_p_light_bgcolor;
+  padding: $black_p_light_padding;
+  margin-left: auto;
+  margin-right: auto;
+
+  @media only screen and (min-width:$break_tablet) {
+    width: 17rem;
+  }
+  @media only screen and (min-width:$break_desktop) {
+    width: 30rem;
+  }
+}
+
+.match p {
+  text-align: left;
+  position:relative;
+  z-index: 1;
+}
+
+em {
+  @include em_format;
+
+  header section & {
+    padding-bottom:0;
+  }
+  #blog & {
+
+    padding-bottom:0;
+    @media only screen and (min-width:$break_mobile) {
+      line-height: 2.5rem;
+      background: url("../img/lines3_mobile.png") top center no-repeat;
+      background-position-y: -.1875rem;
+    }
+    @media only screen and (min-width:$break_tablet) {
+      background: url("../img/lines3_tablet.png") top center no-repeat;
+      line-height: 3.5rem;
+      background-position-y: 0;
+    }
+    @media only screen and (min-width:$break_tablet) {
+      background: url("../img/lines3_desk.png") top center no-repeat;
+      line-height: 3.5rem;
+      background-position-y: 0;
+    }
+  }
+
+  .match & {
+    @media only screen and (min-width:$break_mobile) {
+      background: url(../img/lines_invert3_mobile.png) top left no-repeat;
+    }
+    @media only screen and (min-width:$break_tablet) {
+      background: url(../img/lines_invert3_tablet.png) top left no-repeat;
+    }
+    @media only screen and (min-width:$break_tablet) {
+      background: url(../img/lines_invert3.png) top left no-repeat;
+    }
+    text-align: left;
+    line-height: 3.5rem;
+    margin-bottom: -2rem;
+  }
+
+  header section  &  {
+    margin-bottom: 0;
+  }
+
+}

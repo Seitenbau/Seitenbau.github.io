@@ -1,0 +1,169 @@
+.btn {
+  font-family: "Brandon Grotesque", Arial, Helvetica, sans-serif;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 0.05rem;
+  line-height: .85rem;
+  font-size: .625rem;
+  font-weight: 700;
+  width: 100%;
+  height: 2.5rem;
+  box-sizing: border-box;
+  text-align: center;
+  display: block;
+  padding: 0.85rem 0px;
+  margin-left:auto;
+  margin-right:auto;
+
+  @media only screen and (min-width:$break_tablet) {
+    width: 12rem;
+  }
+}
+
+.btn.one {
+  background-color: $btn_one_bgcolor;
+  color: $btn_one_color;
+  position: relative;
+  z-index: 1;
+}
+
+.btn.dark {
+  background-color: $btn_two_bgcolor;
+  color: $btn_two_color;
+  position: relative;
+  z-index: 1;
+}
+
+.button-wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  background-color: $darkcol_bgcolor;
+  opacity: 0;
+  -webkit-transition: opacity .3s ease;
+  transition: opacity .3s ease;
+
+  @media only screen and (min-width:$break_mobile) {
+    height: 85.5%;
+  }
+
+  @media only screen and (min-width:$break_tablet) {
+    height: 100%;
+  }
+
+}
+
+.button-inner {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  display: none;
+  color: $sb_color2;
+  -webkit-transform: translate(-50%,-50%);
+  transform: translate(-50%,-50%);
+  fill: $sb_color2;
+}
+
+.button-inner .icon {
+  width: 2.5rem;
+  height: 2.5rem;
+  position: relative;
+  display:block;
+  margin: 0 auto .4375rem;
+}
+
+.icon svg {
+  width: 100%;
+  height: 100%;
+}
+
+.button-text {
+  font-size: .75rem;
+  line-height: 1.6;
+  font-style: normal;
+  font-weight: 800;
+  letter-spacing: .125rem;
+  display: block;
+  color: $sb_color2;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.tile-hover:active .button-wrapper,
+.tile-hover:focus .button-wrapper,
+.tile-hover:hover .button-wrapper {
+  pointer-events: auto;
+  opacity: .9;
+}
+
+.button-wrapper,
+.tile-hover,
+.tile-hover:active .button-inner,
+.tile-hover:focus .button-inner,
+.tile-hover:hover .button-inner {
+  display: block;
+}
+
+.button-wrapper {
+  @media only screen and (min-width:$break_tablet) {
+    height: 100%;
+  }
+
+  @media only screen and (min-width:$break_desktop) {
+    max-width: 34rem;
+    min-width: 10rem;
+  }
+}
+
+.button-standard {
+  background: #FFFFFF;
+  display: block;
+  min-height: 2rem;
+  font-family: "Atlas Grotesk Bold", Arial, Helvetica, sans-serif;
+  font-weight: 900;
+  text-transform: inherit;
+}
+
+.button-standard span {
+  color: $sb_color4;
+  vertical-align: text-bottom;
+  line-height: 2rem;
+  margin: 0.5rem;
+
+  @media only screen and (min-width:$break_mobile) {
+    display: inline-block;
+    margin: 0;
+    width: 90%;
+  }
+}
+
+a:hover {
+  border-color: $sb_color1;
+}
+
+
+a:hover .button-standard {
+  background-color: $sb_color4;
+  transition: color 0.3s ease 0s;
+  span {
+    bgcolor: $sb_color4;
+    color: #FFFFFF;
+  }
+
+}
+
+@media screen and (min-width: 80rem) {
+  .button-text {
+    font-size: .75rem;
+    line-height: 1.6;
+  }
+}
+  @media screen and (min-width: 64rem) {
+    .button-text {
+      font-size: .625rem;
+      line-height: 1.6;
+    }
+  }

@@ -1,0 +1,67 @@
+$html_bg_color: #f5f4f2;
+$html_color: #303639;
+
+$sb_color1: #002d47;
+$sb_color2: #0f0;
+$sb_color3: #19B4EB;
+$sb_color4: #006CB6;
+$sb_color5: #E5E5E5;
+
+$darkcol_bgcolor: $sb_color1;
+$greencol_bgcolor: $sb_color2;
+$col_width: 1%;
+$side_space: 1.875rem;
+$em_color: $sb_color3;
+$text_color: #000000;
+$vertical_text_space: 1.5rem;
+
+$address_color: #022032;
+$address_font_size:.625rem;
+$address_lineheight:1rem;
+$section_pad_vertical: 3rem;
+$section_pad_vertical_desk: 4.25rem;
+$section_box_bgcolor: #FFFFFF;
+$header_section_bgcolor: $sb_color1;
+$header_section_color: #FFFFFF;
+
+$section_match_bgcolor:$sb_color1;
+$section_match_color: #FFFFFF;
+
+$section_projects_bgcolor:#E5E5E5;
+$projects_ul_li_bgcolor: #FFFFFF;
+$projects_info_color:#022032;
+$projects_info_bgcolor: #FFFFFF;
+$projects_info_bordercolor: #F2F5F6;
+
+$section_contact_bgcolor:#F2F5F6;
+$blog_h2_color: #022032;
+$touch_h2_color: #FFFFFF;
+
+$btn_one_bgcolor: $sb_color3;
+$btn_one_color: #000000;
+$btn_two_bgcolor: $sb_color1;
+$btn_two_color: #FFFFFF;
+$h2_font: "Brandon Grotesque", Arial, Helvetica, sans-serif;
+$h2_weight: 800;
+$h3_font: "Brandon Grotesque", Arial, Helvetica, sans-serif;
+$h3_weight: 800;
+$p_letter_space: 0.035rem;
+$black_p_light_color: #022032;
+$black_p_light_bgcolor: #FFFFFF;
+$black_p_light_padding: .5rem 1.5rem .5rem 1.5rem;
+
+$footer_min_height: 24rem;
+$footer_bgcolor: $sb_color3;
+$footer_pad_vertical_top: 4rem;
+$footer_pad_vertical_bottom: 5rem;
+$footer_side_space: $side_space;
+
+$break_mobile:320px;
+$break_mobile1: 350px;
+$break_mobile1_2: 420px;
+$break_mobile2:480px;
+$break_tablet:769px;
+$break_tablet3:930px;
+$break_desktop:1024px;
+$break_desktop2:1240px;
+$break_desktop3:1366px;
