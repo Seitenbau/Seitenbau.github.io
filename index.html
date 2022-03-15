@@ -25,124 +25,483 @@
         <!--[if lt IE 8]>
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
+        <div class="dark_col column"></div>
+        <div class="green_col column"></div>
 
         <header>
         	<section>
-            <h1><a href="http://www.seitenbau.com/">SEITENBAU GmbH</a></h1>
+            <div class="inner_section">
+              <h1><a href="http://www.seitenbau.com/">SEITENBAU GmbH</a></h1>
+              <ul class="flex_list">
+              <li>
+                <div class="text">
+                  <em>Welcome at SEITENBAU</em>
+                  <h2>Inspiring Software Solutions</h2>
+                  <blockquote class="white_p_dark">We’re a professional software company with renown German and Swiss clients in the private and public sector. As a team of dedicated developers, we benefit from open source ‒ so we want to give something back.</blockquote>
+                  <a href="https://www.seitenbau.com/wer-wir-sind/ansprechpartner" target="_blank" alt="External link to seitenbau.com" class="btn one">Contact us</a>
+                </div>
+              </li>
+              <li class="world_container">
+              <div class="clip_mask">
+                <img src="img/welt.svg" class="svg world" />
+              </div>
 
-            		<em>SOFTWARE DEVELOPMENT & SERVICES</em>
-            		<h2>SOFTWARE-LÖSUNGEN, DIE BEGEISTERN.<br> WILLKOMMEN BEI SEITENBAU!</h2>
-
-                <blockquote>As a professional software company and a bunch of dedicated developers we benefit from open source – so we want to give something back. Improving or fixing code is our way to help others just the way they help us. We are happy to share our ideas and coding experiences with the GitHub community. <p>Enjoy.</blockquote>
+              </li>
+              </ul>
+            </div>
            </section>
         </header>
         <main>
-          <section class="box">
-                <section id="projects">
-                  <div class="inner_section">
-                    <h2>01 We GitHub</h2>
-                    <ul id="github_projects">
-                      <!-- siehe github_api.js -->
-                    </ul>
-                  </div>
-              </section>
-              <section id="soft">
-                    <div class="inner_section">
-                      <h2 class="invert_h2">02 We believe in</h2>
-                      <ul>
-                          <li>High Quality
-                          <li>Team Spirit
-                          <li>Flexibility
-                          <li>Technical Excellence
-                          <li>Clean Code
-                          <li>Responsibility
-                          <li>Continuous Integration
-                          <li>Open Source Software
-                      </ul>
-                      <div class="img">
-                          <img class="img_addon" src="img/bulb.svg" alt="">
-                          <img class="img_addon" src="img/bulb-active.svg" alt="">
-                      </div>
-                    </div>
-              </section>
-              <section class="box" id="location">
-                <div class="inner_section">
-                  <h2>03 We work in</h2>
-                  <div class="city">
-                      <div class="map" id="map-constance"><div class="popup"></div></div>
-                      <div class="map-description">
-                          <h3>Headquarters Konstanz</h3>
-                          <address>SEITENBAU GmbH
-                              Seilerstraße 7
-                              78467 Konstanz
-                              info@seitenbau.com
-                              Tel.: +49 7531 36598-00
-                              Fax: +49 7531 36598-11
-                          </address>
-                          <aside>USt-IdNr.: DE 1905 525 50
-                              HRB 381528
-                              Amtsgericht Freiburg
-                          </aside>
-                      </div>
-                  </div>
-                  <div class="city">
-                      <div class="map" id="map-cologne"><div class="popup"></div></div>
-                      <div class="map-description">
-                          <h3>Office in Cologne</h3>
-                          <address>SEITENBAU GmbH
-                              Lindenstraße 14
-                              50674 Köln
-                              Tel.: +49 221 888816-00
-                              Fax: +49 221 888816-11
-                          </address>
-                      </div>
-                  </div>
-                </div>
-              </section>
+          <section class="icons">
+            <div class="inner_section">
+            <div class="icon_list_container">
+            <ul class="icon_list">
+               <li>
+                 <img src="img/icon_1.svg" alt="">
+                 <img src="img/icon_2.svg" alt="">
+               </li>
+               <li>
+                 <img src="img/icon_3.svg" alt="">
+                 <img src="img/icon_4.svg" alt="">
+               </li>
+            </ul>
+            </div>
+            </div>
           </section>
+          <section id="projects">
+              <div class="inner_section">
+                <h2>We GitHub</h2>
+
+                <div class="filter_container">
+                  <select class="project_filter_select">
+                    <!-- siehe github_api.js -->
+                  </select>
+                  <div class="select_arrow"></div>
+                  <ul class="project_filter">
+                    <!-- siehe github_api.js -->
+                  </ul>
+                </div>
+
+                <ul class="projects" id="github_projects">
+                  <li class="list_headers">
+                    <div class="header_div">Name</div>
+                    <div class="header_div">Description</div>
+                    <div class="header_div"><span class="star_fork">Rating</span><span class="language">Language</span></div>
+                  </li>
+                  <!-- siehe github_api.js -->
+                </ul>
+              </div>
+          </section>
+          <section id="soft">
+
+                <div class="inner_section">
+                  <h2 class="invert_h2">We believe in</h2>
+                  <ul class="soft_list">
+                      <li>
+                       <div>
+                        <img src="img/icon_high_quality.svg" alt="Icon: Symbol for High Quality" />
+                        <span>High Quality</span>
+                       </div>
+                      </li>
+                      <li>
+                       <div>
+                        <img src="img/icon_team_spirit.svg" alt="Icon: Symbol for Team Spirit" />
+                        <span>Team Spirit</span>
+                       </div>
+                      </li>
+                      <li>
+                       <div>
+                        <img src="img/icon_flexibility.svg" alt="Icon: Symbol for Flexibility" />
+                        <span>Flexibility</span>
+                       </div>
+                      </li>
+                      <li>
+                       <div>
+                        <img src="img/icon_tech_excellence.svg" alt="Icon: Symbol for Technical Excellence" />
+                        <span>Technical Excellence</span>
+                       </div>
+                      </li>
+                      <li>
+                       <div>
+                        <img src="img/icon_clean_code.svg" alt="Icon: Symbol for Clean Code" />
+                        <span>Clean Code</span>
+                       </div>
+                      </li>
+                     <li>
+                       <div>
+                        <img src="img/icon_resonsibility.svg" alt="Icon: Symbol for Responibility" />
+                        <span>Responsibility</span>
+                       </div>
+                      </li>
+                      <li>
+                       <div>
+                        <img src="img/icon_continuos_delivery.svg" alt="Icon: Symbol for Continuous Delivery" />
+                        <span>Continuous Delivery</span>
+                       </div>
+                      </li>
+                     <li>
+                       <div>
+                        <img src="img/icon_open_source.svg" alt="Icon: Symbol for Open Source Software" />
+                        <span>Open Source Software</span>
+                       </div>
+                      </li>
+                  </ul>
+                </div>
+          </section>
+          <section class="box" id="skills">
+            <div class="inner_section">
+              <h2>We do</h2>
+              <ul class="do_list">
+                <li>
+                  <a class="tile-hover" href="https://www.seitenbau.com/was-wir-koennen/agile-requirements" target="_blank" alt="External link to seitenbau.com">
+                  <span class="container">
+                    <span class="img_wrapper">
+                      <img src="img/agil_req.png" />
+                    </span>
+                    <span class="text">
+                      <span>Agile Requirements Engineering</span>
+                    </span>
+                  </span>
+                  <span class="button-wrapper">
+                    <span class="button-inner">
+                      <span class="icon icon-services_softwareentwicklung">
+                        <svg class="svg-services_softwareentwicklung">
+                          <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/svg-sprite.min.svg#link_kachel"></use>
+                        </svg>
+                      </span>
+                      <span class="button-text">Mehr Erfahren</span>
+                    </span>
+                  </span>
+                </a>
+                </li>
+                <li>
+                  <a class="tile-hover" href="https://www.seitenbau.com/was-wir-koennen/continuous-delivery" target="_blank" alt="External link to a seitenbau.com">
+                  <span class="container">
+                    <span class="img_wrapper">
+                      <img src="img/con_delivery.png" />
+                    </span>
+                    <span class="text">
+                      <span>Continuous Delivery</span>
+                    </span>
+                  </span>
+                  <span class="button-wrapper">
+                    <span class="button-inner">
+                      <span class="icon icon-services_softwareentwicklung">
+                        <svg class="svg-services_softwareentwicklung">
+                          <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/svg-sprite.min.svg#link_kachel"></use>
+                        </svg>
+                      </span>
+                      <span class="button-text">Mehr Erfahren</span>
+                    </span>
+                  </span>
+                  </a>
+                </li>
+                <li>
+                  <a class="tile-hover" href="https://www.seitenbau.com/was-wir-koennen/evolutionaere-architekturen" target="_blank" alt="External link to seitenbau.com">
+                  <span class="container">
+                    <span class="img_wrapper">
+                      <img src="img/evo_soft_arch.png" />
+                    </span>
+                    <span class="text">
+                      <span>Evolutionary Software Architecture</span>
+                    </span>
+                  </span>
+                  <span class="button-wrapper">
+                    <span class="button-inner">
+                      <span class="icon icon-services_softwareentwicklung">
+                        <svg class="svg-services_softwareentwicklung">
+                          <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/svg-sprite.min.svg#link_kachel"></use>
+                        </svg>
+                      </span>
+                      <span class="button-text">Mehr Erfahren</span>
+                    </span>
+                  </span>
+                  </a>
+                </li>
+                <li>
+                  <a class="tile-hover"href="https://www.seitenbau.com/was-wir-koennen/open-source" target="_blank" alt="External link to seitenbau.com">
+                  <span class="container">
+                    <span class="img_wrapper">
+                      <img src="img/open_soft.png" />
+                    </span>
+                    <span class="text">
+                      <span>Open Source Software</span>
+                    </span>
+                  </span>
+                  <span class="button-wrapper">
+                    <span class="button-inner">
+                      <span class="icon icon-services_softwareentwicklung">
+                        <svg class="svg-services_softwareentwicklung">
+                          <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/svg-sprite.min.svg#link_kachel"></use>
+                        </svg>
+                      </span>
+                      <span class="button-text">Mehr Erfahren</span>
+                    </span>
+                  </span>
+                  </a>
+                </li>
+                <li>
+                  <a class="tile-hover" href="https://www.seitenbau.com/was-wir-koennen/public-service-design" target="_blank" alt="External Link to seitenbau.com">
+                  <span class="container">
+                    <span class="img_wrapper">
+                      <img src="img/public_service.png" />
+                    </span>
+                    <span class="text">
+                      <span>Public Service Design</span>
+                    </span>
+                  </span>
+                  <span class="button-wrapper">
+                    <span class="button-inner">
+                      <span class="icon icon-services_softwareentwicklung">
+                        <svg class="svg-services_softwareentwicklung">
+                          <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/svg-sprite.min.svg#link_kachel"></use>
+                        </svg>
+                      </span>
+                      <span class="button-text">Mehr Erfahren</span>
+                    </span>
+                  </span>
+                  </a>
+                </li>
+                <li>
+                  <a class="tile-hover" href="https://www.seitenbau.com/was-wir-koennen/reengineering-von-altsystemen" target="_blank" alt="External link to seitenbau.com">
+                  <span class="container">
+                    <span class="img_wrapper">
+                      <img src="img/system_reeng.png" />
+                    </span>
+                    <span class="text">
+                      <span>Reengineering von Altsystemen</span>
+                    </span>
+                  </span>
+                    <span class="button-wrapper">
+                    <span class="button-inner">
+                      <span class="icon icon-services_softwareentwicklung">
+                        <svg class="svg-services_softwareentwicklung">
+                          <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/svg-sprite.min.svg#link_kachel"></use>
+                        </svg>
+                      </span>
+                      <span class="button-text">Mehr Erfahren</span>
+                    </span>
+                  </span>
+                  </a>
+                </li>
+                <li>
+                  <a class="tile-hover" href="https://www.seitenbau.com/was-wir-koennen/social-intranet" target="_blank" alt="External link to seitenbau.com">
+                  <span class="container">
+                    <span class="img_wrapper">
+                      <img src="img/social_intra.png" />
+                    </span>
+                    <span class="text">
+                      <span>Social Intranet und vernetztes Arbeiten</span>
+                    </span>
+                  </span>
+                  <span class="button-wrapper">
+                    <span class="button-inner">
+                      <span class="icon icon-services_softwareentwicklung">
+                        <svg class="svg-services_softwareentwicklung">
+                          <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/svg-sprite.min.svg#link_kachel"></use>
+                        </svg>
+                      </span>
+                      <span class="button-text">Mehr Erfahren</span>
+                    </span>
+                  </span>
+                  </a>
+                </li>
+                 <li>
+                  <a class="tile-hover" href="https://www.seitenbau.com/was-wir-koennen/user-experience-barrierefreiheit" target="_blank" alt="External link to seitenbau.com">
+                  <span class="container">
+                    <span class="img_wrapper">
+                      <img src="img/ux_access.png" />
+                    </span>
+                    <span class="text">
+                      <span>User Experience and Accessibility</span>
+                    </span>
+                  </span>
+                  <span class="button-wrapper">
+                    <span class="button-inner">
+                      <span class="icon icon-services_softwareentwicklung">
+                        <svg class="svg-services_softwareentwicklung">
+                          <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/svg-sprite.min.svg#link_kachel"></use>
+                        </svg>
+                      </span>
+                      <span class="button-text">Mehr Erfahren</span>
+                    </span>
+                  </span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </section>
+          <section class="box" id="blog">
+            <div class="blog_content">
+            <em>News in our Blog</em>
+            <h2>Whats up</h2>
+            <p class="black_p_light">
+              Find out more about what moves us, latest news on our projects, events and publications in our blog.
+            </p>
+            <a href="https://www.seitenbau.com/blog" target="_blank" alt="External link to seitenbau.com" class="btn dark">To the Blog</a>
+            </div>
+            <div class="clip_mask">
+              <picture class="blog_pic">
+                <source media="(min-width:1023px)" srcset="img/sb_hq.png">
+                <source media="(min-width:599px)" srcset="img/sb_hq_600.png">
+                <source media="(min-width:319px)" srcset="img/sb_hq_320.png">
+                <img class="graphic" src="img/sb_hq.png" alt="Building: Seitenbau HQ">
+              </picture>
+            </div>
+          </section>
+        <section class="matchset">
+        <section class="box match" id="match">
+          <div class="inner_section">
+            <ul class="flex_list heart">
+              <li>
+                <em>Work with us</em>
+                <h2>That’s a match</h2>
+                <p class="white_p_dark">Are you looking for that special employer that shares your mindset and work ethics? We want to create an environment where team members can be themselves to contribute in the best way and improve their professional skills.</p>
+                <a href="https://www.seitenbau.com/karriere" target="_blank" alt="External link to seitenbau.com" class="btn one">Find out more</a>
+              </li>
+              <li>
+                <img class="svg heart" src="img/herz.svg" class="svg" />
+              </li>
+            </ul>
+          </div>
+        </section>
+        <section class="box match" id="match2">
+          <div class="inner_section">
+            <ul class="flex_list land">
+              <li>
+                <em>Work with us</em>
+                <h2>Where to find us</h2>
+                <p class="white_p_dark">Our team works from many different cities in Germany. You will find our Headquarter in the South of Germany in Constance - Our Second Office in Cologne.</p>
+                <a href="https://www.seitenbau.com/karriere" target="_blank" alt="External link to seitenbau.com" class="btn one">Contact us</a>
+              </li>
+              <li>
+                <img src="img/karte.svg" class="svg land" />
+              </li>
+            </ul>
+          </div>
+        </section>
+        </section>
+        <section class="box contact" id="contact">
+          <div class="inner_section">
+            <ul class="flex_list">
+              <li>
+                <div class="clip_mask">
+                  <picture>
+                    <source media="(min-width:1024px)" srcset="img/contact_hq.png">
+                    <source media="(min-width:600px)" srcset="img/contact_hq_600.png">
+                    <source media="(min-width:320px)" srcset="img/contact_hq_320.png">
+                    <img class="graphic" src="img/contact_hq.png" alt="Building: Seitenbau HQ">
+                  </picture>
+                </div>
+                <h3>Headquarter Konstanz</h3>
+                <address>
+                  <dl>
+                    <dt class="ally-hide">Adress</dt>
+                    <dd class="dd-first">
+                      <p>
+                        SEITENBAU GmbH <br/>
+                        78467 Constance <br/>
+                      </p>
+                    </dd>
+                    <dt>Email</dt>
+                    <dd class="dd-after">
+                      <a title="Our email adress" href="mailto:info@seitenbau.com">info@seitenbau.com</a></dd>
+                    <dt>Tel.</dt>
+                    <dd class="dd-after"><a title="Our telephone number" href="tel: +49 7531 36598-00">Tel.: +49 7531 36598-00</a></dd>
+                    <dt>Fax</dt>
+                    <dd class="dd-after"><a title="Our fax number" href="fax: +49 7531 36598-11">Fax: +49 7531 36598-11</a></dd>
+                  </dl>
+                </address>
+                <a href="https://www.seitenbau.com/wer-wir-sind/ansprechpartner" target="_blank" alt="External link to seitenbau.com" class="btn dark">Get in touch</a>
+              </li>
+              <li>
+                <div class="clip_mask">
+                  <picture>
+                    <source media="(min-width:1024px)" srcset="img/contact_koeln.png">
+                    <source media="(min-width:600px)" srcset="img/contact_koeln_600.png">
+                    <source media="(min-width:320px)" srcset="img/contact_koeln_320.png">
+                    <img class="graphic" src="img/contact_koeln.png" alt="Building: Seitenbau HQ">
+                  </picture>
+                </div>
+                <h3>Office in Cologne</h3>
+                <address>
+                  <dl>
+                    <dt class="ally-hide">Adress</dt>
+                    <dd class="dd-first">
+                      <p>
+                        SEITENBAU GmbH <br/>
+                        78467 Constance <br/>
+                      </p>
+                    </dd>
+                    <dt>Email</dt>
+                    <dd class="dd-after">
+                      <a title="Our email adress" href="mailto:info@seitenbau.com">info@seitenbau.com</a></dd>
+                    <dt>Tel.</dt>
+                    <dd class="dd-after"><a title="Our telephone number" href="tel: +49 7531 36598-00">Tel.: +49 7531 36598-00</a></dd>
+                    <dt>Fax</dt>
+                    <dd class="dd-after"><a title="Our fax number" href="fax: +49 7531 36598-11">Fax: +49 7531 36598-11</a></dd>
+                  </dl>
+                </address>
+                <a href="https://www.seitenbau.com/wer-wir-sind/ansprechpartner" target="_blank" alt="External link to seitenbau.com" class="btn dark">Get in touch</a>
+              </li>
+          </ul>
+          </div>
+        </section>
+        <section class="box" id="touch">
+          <div class="inner_section">
+            <em>Be part of Seitenbau</em>
+            <h2>Join our team</h2>
+            <a href="https://www.seitenbau.com/wer-wir-sind/ansprechpartner" target="_blank" alt="External link to seitenbau.com" class="btn one">Get in Touch</a>
+          </div>
+        </section>
         </main>
 
         <footer>
          <div class="inner_section">
-
+          <div class="footer_content">
           <div class="footerblock">
-          	<h3>Kontakt</h3>
+          	<h3>Contact</h3>
             <address>
-							Konstanz:<a href="tel:+4975313659800"> +49 7531 3659800</a>
-							Köln:<a href="tel:+4922188881600"> +49 221 88881600</a>
-							<a href="mailto:info@seitenbau.com">info@seitenbau.com</a>
+              <dl>
+                <dt>Email</dt>
+                <dd class="dd-after">
+                  <a title="Our email adress" href="mailto:info@seitenbau.com">info@seitenbau.com</a>
+                </dd>
+                <dt>Tel.</dt>
+                <dd>
+                  <a title="Our telephone number" href="tel: +49 7531 36598-00">Tel.: +49 7531 36598-00</a><br/>
+                </dd>
+                <dt>Fax</dt>
+                <dd class="dd-after"><a title="Our fax number" href="fax: +49 7531 36598-11">Fax: +49 7531 36598-11</a></dd>
+              </dl>
             </address>
             <ul class="social">
-            	<li><a class="sb" title="SEITENBAU.com" target="_blank" href="http://www.seitenbau.com/">SEITENBAU.com</a></li>
-            	<li><a class="fb" title="Facebook" target="_blank" href="https://facebook.com/seitenbau">SEITENBAU on Facebook</a></li>
-            	<li><a class="xi" title="Xing" target="_blank" href="https://www.xing.com/companies/seitenbaugmbh">SEITENBAU on Xing</a></li>
-            	<li><a class="gh" title="Github" target="_blank" href="https://github.com/Seitenbau">SEITENBAU on Github</a></li>
+            	<li><a target="_blank" class="sb" title="SEITENBAU.com" target="_blank" href="http://www.seitenbau.com/">SEITENBAU.com</a></li>
+            	<li><a target="_blank" class="fb" title="Facebook" target="_blank" href="https://facebook.com/seitenbau">SEITENBAU on Facebook</a></li>
+              <li><a target="_blank" class="in" title="Instagram" target="_blank" href="https://www.instagram.com/seitenbau_gmbh/">SEITENBAU on Instagram</a></li>
+            	<li><a target="_blank" class="xi" title="Xing" target="_blank" href="https://www.xing.com/companies/seitenbaugmbh">SEITENBAU on Xing</a></li>
+            	<li><a target="_blank" class="gh" title="Github" target="_blank" href="https://github.com/Seitenbau">SEITENBAU on Github</a></li>
             </ul>
             <ul>
-            	<li><a href="https://www.seitenbau.com/impressum/">Impressum</a></li>
-            	<li><a href="https://www.seitenbau.com/datenschutz/">Datenschutz</a></li>
+            	<li><a target="_blank" href="https://www.seitenbau.com/impressum/">Imprint</a></li>
+            	<li><a target="_blank" href="https://www.seitenbau.com/datenschutz/">Privacy Policy</a></li>
             </ul>
             <small>© 2017 SEITENBAU GmbH</small>
           </div>
 
           <div class="footerblock">
-          	<h3>ANGEBOTE VON SEITENBAU</h3>
-          	<br>
-            <a class="link-footer" href="https://www.service-kommune.de/" rel="noreferrer noopener" target="_blank" title="Besuchen Sie Service-Kommune.de">
-              <h3>Service-Kommune.de</h3>
-            </a>
-            <p>Unser Angebot speziell für Kommunen.</p>
-            <br/>
-            <a class="link-footer" href="http://laut.fm/" rel="noreferrer noopener" target="_blank" title="Besuchen Sie laut.fm">
-              <h3>laut.fm</h3>
-            </a>
-            <p>Das erste User Generated Radio im deutschsprachigen Web.</p>
-        	</div>
-        	<br class="clearfix">
+          	<h3>Our subsidiary company</h3>
+
+            <h3 style="margin: -2px 0 2px 0;"><a href="http://laut.ag/" rel="noreferrer noopener" target="_blank" title="Come visit laut.ag">laut.ag</a></h3>
+            <p>Everything about the music magazine <a href="http://laut.de/" rel="noreferrer noopener" target="_blank" title="Come visit laut.de">laut.de</a>,
+              the online radio <a href="http://laut.fm/" rel="noreferrer noopener" target="_blank" title="Come visit laut.fm">laut.fm</a> and other offerings from the digital music media company from Lake Constance.
+            </p>
+         </div>
          </div>
         </footer>
 
         <script src="js/vendor/jquery-1.11.3.min.js"></script>
+        <script src="js/vendor/jquery.prettydropdowns.js"></script>
         <script src="js/vendor/bootstrap.min.js"></script>
         <script src="js/vendor/openlayers.js"></script>
         <script src="js/github_api.js"></script>
