@@ -22,13 +22,7 @@
 }());
 // Place any jQuery/helper plugins in here.
 $(document).ready(function() {
-  $('select').prettyDropdown({
-    classic : true,
-    width: '53%',
-    customClass: 'project_filter_select',
-    selectedMarker: ''
-  });
-  $('ul li','.project_filter_select').append('<div class="select-arrow"></div>');
+
 
 });
 

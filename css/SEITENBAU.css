@@ -410,7 +410,7 @@ section {
           display: list-item;
           float: left;
           width: auto;
-          max-width: 26.25rem; } }
+          max-width: 48.5%; } }
   section#touch, section#blog {
     position: relative; }
   section#touch {
@@ -846,7 +846,8 @@ section {
         height: 0;
         border-left: 0.3125rem solid transparent;
         border-right: 0.3125rem solid transparent;
-        border-top: 0.5rem solid #FFFFFF; }
+        border-top: 0.5rem solid #FFFFFF;
+        z-index: 100; }
         @media only screen and (min-width: 320px) {
           section#projects .project_filter_select .select-arrow {
             display: block;
@@ -870,6 +871,8 @@ section {
       section#projects .project_filter_select li:first-child {
         background-color: #006CB6;
         color: #FFFFFF; }
+      section#projects .project_filter_select li:first-child {
+        z-index: 100; }
       section#projects .project_filter_select li:first-child .select-arrow,
       section#projects .project_filter_select .selected .select-arrow {
         display: block; }

@@ -917,6 +917,7 @@ section {
 
       .select-arrow {
         @include arrow_down_shape;
+        z-index:100;
         @media only screen and (min-width:$break_mobile) {
           display: block;
           top: 1.25rem;
@@ -954,6 +955,9 @@ section {
       li:first-child {
         background-color: $sb_color4;
         color: #FFFFFF;
+      }
+      li:first-child {
+        z-index:100;
       }
 
       li:first-child,

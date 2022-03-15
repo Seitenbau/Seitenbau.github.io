@@ -150,6 +150,15 @@ $(document).ready(function () {
     $('button','.project_filter').on('click',function(){
       sbgit_setFilterLanguage($(this).attr('value'));
     });
+
+    $('select').prettyDropdown({
+      classic : true,
+      width: '53%',
+      customClass: 'project_filter_select',
+      selectedMarker: ''
+    });
+    $('ul','.project_filter_select').prepend('<div class="select-arrow"></div>');
+
     $('.project_filter_select').change(function(){
       sbgit_setFilterLanguage($('option:selected',this).attr('value'));
     });
